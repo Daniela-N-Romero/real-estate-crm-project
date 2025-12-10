@@ -1,0 +1,86 @@
+
+   /* 1. Reglas base para la página */
+    html, body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+        scrollbar-gutter: 0;
+    }
+
+    /* 2. El nuevo contenedor que maneja el layout flexible */
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    /* =================================================================
+       Estilos del Layout (sin cambios)
+       ================================================================= */
+    
+    .main-content { display: flex; gap: 20px; padding: 20px 0; }
+    .sidebar { width: 280px; flex-shrink: 0; background-color: #f8f9fa; border-radius: 8px; height: fit-content;  position: relative; }
+    .results-list { flex-grow: 1; min-width: 0; }
+    
+    @media (max-width: 768px) {
+        .main-content { flex-direction: column; }
+        .sidebar { width: 100%; margin-bottom: 20px; }
+  .filter-scroll-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual ancho */
+        gap: 10px; /* Espacio entre los filtros */
+    }
+        .filter-scroll-container::-webkit-scrollbar { height: 5px; }
+        .filter-scroll-container::-webkit-scrollbar-thumb { background-color: #ccc; border-radius: 10px; }
+
+    }
+
+    /* =================================================================
+       Estilos de Componentes (sin cambios)
+       ================================================================= */
+
+    .property-card-image-container { position: relative; }
+    .property-card-category { position: absolute; top: 12px; left: 12px; text-transform: uppercase; }
+
+    /* Estilos para Tom Select */
+    .ts-dropdown { border-radius: 0.5rem; border: 1px solid #dee2e6; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); margin-top: 5px; }
+    .ts-dropdown .option { padding: 12px 15px; font-size: 1rem; font-weight: 500; transition: background-color 0.2s ease, color 0.2s ease; }
+    .ts-dropdown .option.active, 
+    .ts-dropdown .option:hover { background-color: #0d6efd; color: white; }
+    .filter-scroll-container.is-open {
+    overflow: visible;
+}
+
+@media (min-width: 768px) {
+    .sidebar-desktop {
+        position: static !important; /* Deja de ser flotante */
+        transform: none !important;  /* Se muestra siempre */
+        visibility: visible !important;
+        width: 280px !important;     /* Ancho fijo del sidebar */
+        height: auto !important;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    /* Ocultamos el botón de cerrar y el header del offcanvas en desktop */
+    .sidebar-desktop .offcanvas-header {
+        display: none;
+    }
+
+
+
+/* 2. Le da a la barra de filtros una capa superior (z-index) para que 
+      el menú abierto se muestre POR ENCIMA del contenido de abajo */
+.sidebar {
+    position: relative;
+    z-index: 10;
+}
+
+
+}
+
+.property-card {
+    width: 100%;
+    max-width: 350px; 
+}

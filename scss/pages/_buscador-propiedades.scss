@@ -1,0 +1,187 @@
+/* --- Estilos para la nueva página de búsqueda --- */
+
+.hero-search-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.hero-search-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+/* Formulario de filtros */
+.filter-form {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap; /* Para que se ajuste en móviles */
+    gap: 1rem;
+    align-items: center;
+}
+
+.filter-controls > * {
+    flex: 1; /* Hace que los elementos crezcan para ocupar el espacio */
+    min-width: 150px; /* Ancho mínimo antes de que pasen a la siguiente línea */
+}
+
+.filter-submit-btn {
+    flex-grow: 0; /* El botón de buscar no crece */
+    padding: 0.55rem 1.5rem;
+}
+
+/* Sección de la grilla de propiedades */
+.property-listings-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Un fondo gris muy claro */
+}
+
+.results-title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Grilla de propiedades (¡La magia del CSS Grid!) */
+.properties-grid {
+    display: grid;
+    /* Crea columnas flexibles de mínimo 300px */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem; /* Espacio entre las tarjetas */
+}
+
+/* Tarjeta de propiedad (Lo que generará tu JS) */
+.property-card {
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.property-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
+.property-card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.property-card-category {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 0.75rem;
+    text-transform: capitalize;
+    box-shadow: #737e88 4px 2px 5px;
+}
+
+.property-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.property-card-location {
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.property-card-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-top: auto; /* Empuja el precio hacia abajo */
+    margin-bottom: 1.25rem;
+}
+
+/* Specific override for Alquiler */
+.property-card-category.alquiler {
+  background-color: #dcbf85; 
+  color: #002641;
+}
+#clear-filters-btn{
+    color: #e9ecef;
+}
+
+.header-public-nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.header-public-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para el buscador a pantalla completa */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.inmo-main {
+    flex-grow: 1; /* Esto hace que el main ocupe el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/images/inmob-home/20250905_130908.webp');
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.hero-search-section {
+    padding-block: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+
+/* Estilos adicionales para el menú en modo mobile */
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.692);
+    }
+}

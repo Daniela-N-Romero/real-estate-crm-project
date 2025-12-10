@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de Propiedad - Panel de Administración</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body id="admin-property-form-page" class="sticky-footer-page">
+  <div class="header">
+    <h1>Gestión de Propiedad</h1>
+    <a href="/admin/dashboard.html" class="back-btn">Volver al Dashboard</a>
+  </div>
+
+  <div class="container">
+    <div class="property-form">
+      <h2>Crear/Editar Propiedad</h2>
+      <form id="propertyForm" class="friendly-form">
+        <fieldset>
+          <legend>
+            <i class="bi bi-file-earmark-text"></i> Datos Principales
+          </legend>
+          <div class="form-group">
+            <label for="name">Nombre / Título del Anuncio:</label>
+            <input type="text" id="name" name="name" placeholder="Ej: Casa con parque en Hudson" required />
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="type">Tipo de Propiedad:</label>
+                <select id="type" name="type" required>
+                  <option value="">Seleccione</option>
+                  <option value="vivienda">Vivienda</option>
+                  <option value="lote">Lote</option>
+                  <option value="industrial">Industrial</option>
+                  <option value="comercial">Comercial</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="subtype">Subtipo:</label>
+                <select id="subtype" name="subtype" required></select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="category">Categoría:</label>
+                <select id="category" name="category" required>
+                  <option value="">Seleccione</option>
+                  <option value="venta">Venta</option>
+                  <option value="alquiler">Alquiler</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-group-inline">
+            <label for="price">Precio:</label>
+            <div class="input-group">
+              <select id="currency" name="currency" class="input-group-text" required>
+                <option value="USD">USD</option>
+                <option value="ARS">ARS</option>
+                <option value="ARS">U$D/m2</option>
+              </select>
+              <input type="number" id="price" name="price" class="form-control" placeholder="Consultar" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="description">Descripción Pública:</label>
+            <textarea id="description" name="description" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="agentId">Asignar Contacto (Equipo):</label>
+            <select id="agentId" name="agentId" class="form-select" required>
+              <option value="">Cargando agentes...</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            <i class="bi bi-geo-alt"></i> Ubicación y Superficies
+          </legend>
+
+         
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="totalSurface">Superficie Total (m²):</label>
+                <input type="number" id="totalSurface" name="totalSurface" min="0" step="0.01" required />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="coveredSurface">Superficie Cubierta (m²):</label>
+                <input type="number" id="coveredSurface" name="coveredSurface" min="0" step="0.01" required />
+              </div>
+            </div>
+
+            <div class="form-group mt-4 p-3 bg-light border rounded">
+              <label class="form-label fw-bold mb-2">
+                <i class="bi bi-pin-map-fill text-danger"></i> Geolocalización
+              </label>
+
+              <div class="input-group mb-2 bg-white justify-content-between align-items-center">
+                <div class="w-75"><input type="text" id="addressSearch" class="form-control"
+                  placeholder="Escribe calle y ciudad para acercar el mapa (ej: Calle 14, Berazategui)"></div>   
+                <div> <button class="btn btn-outline-primary" type="button" id="btnSearchAddress"><i class="bi bi-search me-1"></i>Buscar</button></div>
+              </div>
+
+              <p class="small text-muted mb-2">
+                <i class="bi bi-info-circle text-danger"></i> Usa el buscador para acercarte, y luego <strong class="text-body-emphasis text-decoration-underline">arrastra el pin
+                  azul</strong> hasta la posición exacta.
+              </p>
+
+              <div id="locationPickerMap" style="height: 350px; width: 100%; border-radius: 8px; z-index: 1;"></div>
+
+              <div class="d-flex justify-content-end mt-2">
+                <button type="button" id="btnResetLocation"
+                  class="btn btn-sm btn-link text-danger text-decoration-none">
+                  <i class="bi bi-trash"></i> Quitar ubicación
+                </button>
+              </div>
+
+               <div class="form-group">
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                  <label for="locality">Partido:</label>
+                  <input type="text" id="locality" name="locality" class="form-control" required list="localityOptions" autocomplete="off"/>
+                  <datalist id="localityOptions"></datalist>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="neighbourhood">Localidad:</label>
+                <input type="text" id="neighbourhood" name="neighbourhood" />
+              </div>
+            </div>
+          </div>
+
+              <input type="hidden" id="latitude" name="latitude">
+              <input type="hidden" id="longitude" name="longitude">
+            </div>
+        </fieldset>
+
+        <div id="viviendaFields" style="display: none">
+          <fieldset>
+            <legend>
+              <i class="bi bi-house-door"></i> Detalles de la Vivienda
+            </legend>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="v_ambientes">Ambientes:</label><input type="number" id="v_ambientes" name="v_ambientes"
+                    min="1" class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="v_dormitorios">Dormitorios:</label><input type="number" id="v_dormitorios"
+                    name="v_dormitorios" min="0" class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="v_banos">Baños:</label><input type="number" id="v_banos" name="v_banos" min="0"
+                    class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="v_cocheras">Cocheras:</label><input type="number" id="v_cocheras" name="v_cocheras"
+                    min="0" class="form-control" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div id="loteFields" style="display: none">
+          <fieldset>
+            <legend><i class="bi bi-map"></i> Detalles del Lote</legend>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="l_metrosFrente">Metros de Frente:</label><input type="number" id="l_metrosFrente"
+                    name="l_metrosFrente" min="0" step="0.01" class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="l_metrosFondo">Metros de Fondo:</label><input type="number" id="l_metrosFondo"
+                    name="l_metrosFondo" min="0" step="0.01" class="form-control" />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Servicios:</label>
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input type="checkbox" id="l_serviciosAgua" name="l_serviciosAgua" class="form-check-input" /><label
+                    for="l_serviciosAgua" class="form-check-label">Agua</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="l_serviciosLuz" name="l_serviciosLuz" class="form-check-input" /><label
+                    for="l_serviciosLuz" class="form-check-label">Luz</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="l_serviciosGas" name="l_serviciosGas" class="form-check-input" /><label
+                    for="l_serviciosGas" class="form-check-label">Gas Natural</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="l_cercado">Está Cercado:</label><select id="l_cercado" name="l_cercado"
+                    class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="l_barrioCerrado">Es Barrio Cerrado:</label><select id="l_barrioCerrado"
+                    name="l_barrioCerrado" class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div id="industrialFields" style="display: none">
+          <fieldset>
+            <legend>
+              <i class="bi bi-cone-striped"></i> Detalles Industriales
+            </legend>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_altura">Altura (m):</label><input type="number" id="i_altura" name="i_altura"
+                    class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_oficinasM2">Oficinas (m²):</label><input type="number" id="i_oficinasM2"
+                    name="i_oficinasM2" class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_banos">Baños:</label><input type="number" id="i_banos" name="i_banos"
+                    class="form-control" />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_almaLlena">Alma Llena:</label><select id="i_almaLlena" name="i_almaLlena"
+                    class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_tienePotencia">Potencia Trifásica:</label><select id="i_tienePotencia"
+                    name="i_tienePotencia" class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_tieneGas">Gas Industrial:</label><select id="i_tieneGas" name="i_tieneGas"
+                    class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="i_redHidrante">Red Hidrante:</label><select id="i_redHidrante" name="i_redHidrante"
+                    class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div id="comercialFields" style="display: none">
+          <fieldset>
+            <legend><i class="bi bi-shop"></i> Detalles Comerciales</legend>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="c_bano">Baño:</label><select id="c_bano" name="c_bano" class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="c_trifasica">Tiene Trifásica:</label><select id="c_trifasica" name="c_trifasica"
+                    class="form-select">
+                    <option value="false">No</option>
+                    <option value="true">Sí</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group d-flex gap-4 mt-3">
+              <div class="form-check">
+                <input type="checkbox" id="c_tieneCocina" name="c_tieneCocina" class="form-check-input" /><label
+                  for="c_tieneCocina" class="form-check-label">Tiene Cocina</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="c_cortinaElectrica" name="c_cortinaElectrica"
+                  class="form-check-input" /><label for="c_cortinaElectrica" class="form-check-label">Cortina
+                  Eléctrica</label>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" id="c_cortinaMetalica" name="c_cortinaMetalica" class="form-check-input" /><label
+                  for="c_cortinaMetalica" class="form-check-label">Cortina Metálica</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div id="amenitiesSection" style="display: none">
+          <fieldset>
+            <legend><i class="bi bi-star"></i> Comodidades</legend>
+            <div class="form-group">
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="amenities" value="pileta" />
+                  Pileta</label>
+                <label><input type="checkbox" name="amenities" value="parrilla" />
+                  Parrilla</label>
+                <label><input type="checkbox" name="amenities" value="garage" />
+                  Garage</label>
+                <label><input type="checkbox" name="amenities" value="lavadero" />
+                  Lavadero</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <fieldset>
+          <legend><i class="bi bi-camera"></i> Multimedia</legend>
+
+          <div class="form-group">
+            <label for="images">Imágenes (la primera será la portada):</label>
+            <input type="file" id="images" name="images" multiple accept="image/*" class="form-control" />
+            <div class="image-upload-preview" id="image-preview"></div>
+            <input type="hidden" id="filesToDelete" name="filesToDelete" value="[]" />
+          </div>
+          <div class="form-group">
+            <label for="videoUrl">Enlace de video de YouTube:</label>
+            <input type="text" id="videoUrl" name="videoUrl" placeholder="Pega aquí el enlace..."
+              class="form-control" />
+            <div id="video-preview"></div>
+          </div>
+          <div class="form-group">
+            <label for="pdf">PDF Informativo (opcional):</label>
+            <input type="file" id="pdf" name="pdf" accept="application/pdf" class="form-control" />
+            <div id="pdf-preview"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="mb-4"><i class="bi bi-shield-lock"></i>Gestión Interna</legend>
+
+          <div class="my-3 text-center">
+            <p class="mb-2 fw-bold">¿De quién es la propiedad?</p>
+
+            <div class="btn-group d-flex justify-content-center flex-column flex-md-row" role="group"
+              aria-label="Selector de Origen">
+              <div class="m-auto mb-2">
+                <input type="radio" class="btn-check" name="propertySource" id="sourceMS" value="ms_propia"
+                  autocomplete="off">
+                <label class="btn btn-secondary" for="sourceMS" id="msLabel">🏢 MS Propiedades</label>
+              </div>
+              <div class="m-auto mb-2">
+                <input type="radio" class="btn-check" name="propertySource" id="sourceColleague" value="colega"
+                  autocomplete="off">
+                <label class="btn btn-secondary" for="sourceColleague" id="colLabel">🤝 Colega / Externa</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="ownerSection" style="display: none;" class="animate-fade-in mt-4 border-top pt-3">
+            <div class="form-group mb-3">
+              <label for="ownerId" class="fw-bold">Propietario (Cliente):</label>
+              <div class="d-flex gap-2">
+                <select id="ownerId" name="ownerId" class="form-select">
+                  <option value="">Cargando propietarios...</option>
+                </select>
+                <button class="btn btn-primary shadow-sm" type="button" id="btnOpenOwnerCreate" title="Nuevo"
+                  data-bs-toggle="modal" data-bs-target="#quickOwnerModal"> <i class="bi bi-person-plus-fill"></i>
+                </button>
+                <button class="btn btn-outline-secondary shadow-sm" type="button" id="btnOpenOwnerEdit"
+                  title="Editar"><i class="bi bi-pencil-fill"></i></button>
+              </div>
+              <small class="text-muted">Selecciona un propietario de la lista.</small>
+            </div>
+
+            <div class="row g-2">
+              <div class="col-md-6">
+                <label class="small text-muted fw-bold">Teléfono:</label>
+                <input type="text" id="ownerPhonePreview" class="form-control bg-light" disabled placeholder="-">
+              </div>
+              <div class="col-md-12">
+                <label class="small text-muted fw-bold">Notas del Propietario (Perfil):</label>
+                <textarea id="ownerNotesPreview" class="form-control bg-light" rows="2" disabled
+                  placeholder="Sin notas registradas."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div id="colleagueSection" style="display: none;" class="animate-fade-in mt-4 border-top pt-3">
+            <div class="form-group mb-3">
+              <label for="colleagueId" class="fw-bold">Colega:</label>
+              <div class="d-flex gap-2">
+                <select id="colleagueId" name="colleagueId" class="form-select border-warning">
+                  <option value="">Cargando colegas...</option>
+                </select>
+                <button class="btn btn-warning shadow-sm" type="button" id="btnOpenColleagueCreate" title="Nuevo"
+                  data-bs-toggle="modal" data-bs-target="#quickColleagueModal"> <i class="bi bi-building-add"></i>
+                </button>
+                <button class="btn btn-outline-secondary shadow-sm" type="button" id="btnOpenColleagueEdit"
+                  title="Editar"><i class="bi bi-pencil-fill"></i></button>
+              </div>
+              <small class="text-muted">Selecciona el contacto.</small>
+            </div>
+
+
+            <div class="row g-2">
+              <div class="col-md-6">
+                <label class="small text-muted fw-bold">Inmobiliaria:</label>
+                <input type="text" id="colAgencyPreview" class="form-control bg-light" disabled placeholder="-">
+              </div>
+              <div class="col-md-6">
+                <label class="small text-muted fw-bold">Teléfono:</label>
+                <input type="text" id="colPhonePreview" class="form-control bg-light" disabled placeholder="-">
+              </div>
+              <div class="col-md-12">
+                <label class="small text-muted fw-bold">Notas sobre el Colega (Acuerdos):</label>
+                <textarea id="colNotesPreview" class="form-control bg-light" rows="2" disabled
+                  placeholder="Sin notas registradas."></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group mt-3">
+            <label for="privateNotes">Notas sobre la propiedad:</label>
+            <textarea id="privateNotes" name="privateNotes"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-group mb-3">
+          <label class="form-label fw-bold d-block">Estado de Publicación:</label>
+
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="isPublished" id="isPublishedDraft" value="false"
+                checked />
+              <label class="form-check-label" for="isPublishedDraft">
+                Borrador
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="isPublished" id="isPublishedPublished" value="true" />
+              <label class="form-check-label" for="isPublishedPublished">
+                Publicada
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-actions">
+          <a href="/admin/dashboard.html" class="btn btn-secondary me-2">Volver</a>
+          <button type="submit" class="btn btn-success">
+            Guardar Propiedad
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade" id="quickColleagueModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Nuevo Colega</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="quickColleagueForm">
+            <input type="hidden" id="quickColleagueIdHidden">
+            <div class="mb-3">
+              <label class="form-label">Nombre del Contacto *</label>
+              <input type="text" class="form-control" id="col_name" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Nombre Inmobiliaria</label>
+              <input type="text" class="form-control" id="col_agency">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Teléfono</label>
+              <input type="text" class="form-control" id="col_phone">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Notas sobre el Colega</label>
+              <textarea class="form-control" id="col_notes" rows="2"
+                placeholder="Ej: Porcentajes, zonas que trabaja, confiabilidad..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="btnSaveColleague">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="quickOwnerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title">Nuevo Propietario</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="quickOwnerForm">
+            <input type="hidden" id="quickOwnerIdHidden">
+            <div class="mb-3">
+              <label for="quickName" class="form-label">Nombre Completo *</label>
+              <input type="text" class="form-control" id="quickName" required />
+            </div>
+            <div class="mb-3">
+              <label for="quickPhone" class="form-label">Teléfono (WhatsApp)</label>
+              <input type="text" class="form-control" id="quickPhone" placeholder="Ej: 11 1234 5678" />
+              <div class="form-text text-muted">
+                <i class="bi bi-info-circle"></i> Ingrese el número con 11
+                (código de área) sin el 15. Debe tener 10 dígitos.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="quickEmail" class="form-label">Email (Opcional)</label>
+              <input type="email" class="form-control" id="quickEmail" />
+            </div>
+            <div class="mb-3">
+              <label for="quickNotes" class="form-label">Notas Privadas</label>
+              <textarea class="form-control" id="quickNotes" rows="2"
+                placeholder="Ej: Origen del contacto, perfil del inversor, horarios de llamada..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Cancelar
+          </button>
+          <button type="button" class="btn btn-primary" id="btnSaveQuickOwner">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="custom-alert-modal" class="custom-modal-overlay" style="display: none">
+    <div class="custom-modal-content">
+      <h3 id="alert-title">Atención</h3>
+      <p id="alert-message">Mensaje por defecto.</p>
+      <button id="alert-ok-btn" class="modal-btn">Aceptar</button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="successActionModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4">
+        <div class="mb-3">
+          <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+        </div>
+        <h4 class="mb-3">¡Propiedad Guardada!</h4>
+        <p class="text-muted mb-4">La operación se realizó con éxito. ¿A dónde quieres ir ahora?</p>
+
+        <div class="d-grid gap-2">
+          <a href="/admin/dashboard.html" class="btn btn-outline-primary btn-lg">
+            <i class="bi bi-list-ul"></i> Volver al Listado
+          </a>
+          <a href="/admin/mapa-privado.html" class="btn btn-primary btn-lg text-white">
+            <i class="bi bi-map-fill"></i> Ver en el Mapa
+          </a>
+          <a type="button" class="btn btn-link text-muted mt-2" href="/admin/property_form.html">
+            <i class="bi bi-plus-circle"></i> Cargar otra propiedad
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-oOLduEJMekKw6_qpVTPXQyTy31melps&libraries=places&loading=async"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+  <script src="js/property_form.js"></script>
+</body>
+
+</html>

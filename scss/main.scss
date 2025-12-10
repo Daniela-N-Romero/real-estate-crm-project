@@ -1,0 +1,34 @@
+@import "./utils/colors";
+@import "./utils/variables";
+@import "./utils/fonts";
+@import "./utils/mixins";
+
+@import "./base/reset";
+
+@import "./layout/footer.scss";
+@import "./layout/header.scss";
+@import "./layout/hero.scss";
+@import "./layout/navbar.scss";
+@import "./layout/sections.scss";
+
+@import "./components/dividers.scss";
+@import "./components/carousel.scss";
+@import "./components/buttons.scss";
+@import "./components/input.scss";
+@import "./components/logo.scss";
+@import "./components/map.scss";
+@import "./components/timeline.scss";
+@import "./components/titles.scss";
+@import "./components/galeriasfotograficas";
+@import "./components/modals";
+@import "./components/swiper";
+
+@import "./pages/homeinmob";
+@import "./pages/contacto";
+@import "./pages/nosotros";
+@import "./pages/propertytemplate";
+@import "./pages/admindashboard";
+@import "./pages/adminindex";
+@import "./pages/buscador-propiedades";
+@import "./pages/property-form";
+@import "./pages/results";

@@ -1,0 +1,36 @@
+/* Estilos generales para el cuerpo de la página */
+
+/* Contenedor principal del Swiper */
+.property-swiper-container {
+  width: 100%;
+  height: 100%; /* Altura fija para el carrusel, puedes ajustarla */
+  overflow: hidden; /* Asegura que el contenido no se salga */
+
+          /* Estilo para cada slide */
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Estilo para las imágenes dentro de cada slide */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra todo el slide sin distorsionarse */
+            display: block; /* Elimina el pequeño espacio extra debajo de las imágenes */
+        }
+
+        /* Estilos opcionales para los botones de navegación (flechas) y la paginación (puntos) */
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #fff; /* Color de las flechas */
+            --swiper-navigation-size: 30px; /* Tamaño de las flechas */
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #fff; /* Color del punto activo de la paginación */
+        }
+}

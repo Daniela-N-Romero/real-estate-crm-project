@@ -1,0 +1,33 @@
+{
+  
+  "author": "Daniela Romero",
+  "license": "ISC",
+  "description": "Plataforma Full Stack de gestión inmobiliaria (CRM + Portal Público). Desarrollada con Node.js, Express y PostgreSQL, implementando arquitectura MVC escalable, autenticación JWT y optimización de imágenes.",
+
+  "name": "real-estate-crm-portfolio",
+  "version": "1.0.0",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "sass": "sass --watch scss/main.scss css/styles.css",
+    "seed": "node scripts/seedDatabase.js"
+  },
+
+  "dependencies": {
+    "bcryptjs": "3.0.2",
+    "bootstrap": "5.3.3",
+    "bootstrap-icons": "1.11.3",
+    "chokidar": "4.0.3",
+    "dotenv": "17.1.0",
+    "express": "5.1.0",
+    "express-session": "1.18.1",
+    "jsonwebtoken": "9.0.2",
+    "multer": "2.0.2",
+    "pg": "8.16.3",
+    "sass": "1.77.2",
+    "sequelize": "6.37.7",
+    "sharp": "0.34.5"
+  }
+
+}

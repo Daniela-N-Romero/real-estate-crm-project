@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "fullName": "Agente Pedro Sánchez",
+    "phoneNumber": "1154043839",
+    "email": "agente1@inmo.com"
+  },
+  {
+    "id": 2,
+    "fullName": "Agente Roberto Sánchez",
+    "phoneNumber": "1160941906",
+    "email": "agente2@inmo.com"
+  },
+  {
+    "id": 3,
+    "fullName": "Agente Carlos Lopez",
+    "phoneNumber": "1197739472",
+    "email": "agente3@inmo.com"
+  },
+  {
+    "id": 4,
+    "fullName": "Agente Pedro Diaz",
+    "phoneNumber": "1152446774",
+    "email": "agente4@inmo.com"
+  },
+  {
+    "id": 5,
+    "fullName": "Agente Carlos Martinez",
+    "phoneNumber": "1173434181",
+    "email": "agente5@inmo.com"
+  }
+]

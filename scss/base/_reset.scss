@@ -1,0 +1,24 @@
+*, *::before, *::after  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'popinsRegular', Helvetica, sans-serif;
+}
+
+.body-gray{
+    background-color: rgba(226, 226, 226, 0.687);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0%;
+}
+
+
+body.light-bg{
+    background-color: white;
+}

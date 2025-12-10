@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "fullName": "Lucia Alvarez",
+    "phoneNumber": "1120239564",
+    "email": "propietario1@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 2,
+    "fullName": "Pedro Perez",
+    "phoneNumber": "1141702203",
+    "email": "propietario2@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 3,
+    "fullName": "Carlos Gomez",
+    "phoneNumber": "1136821653",
+    "email": "propietario3@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 4,
+    "fullName": "Pedro Martinez",
+    "phoneNumber": "1163557811",
+    "email": "propietario4@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 5,
+    "fullName": "Valentina Perez",
+    "phoneNumber": "1155770742",
+    "email": "propietario5@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 6,
+    "fullName": "Diego Fernandez",
+    "phoneNumber": "1129771645",
+    "email": "propietario6@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 7,
+    "fullName": "Lucia Fernandez",
+    "phoneNumber": "1178913051",
+    "email": "propietario7@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 8,
+    "fullName": "Valentina Gomez",
+    "phoneNumber": "1110833843",
+    "email": "propietario8@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 9,
+    "fullName": "Elena Lopez",
+    "phoneNumber": "1143473269",
+    "email": "propietario9@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 10,
+    "fullName": "Diego Martinez",
+    "phoneNumber": "1190415479",
+    "email": "propietario10@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 11,
+    "fullName": "Miguel Lopez",
+    "phoneNumber": "1180914191",
+    "email": "propietario11@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 12,
+    "fullName": "Elena Lopez",
+    "phoneNumber": "1175675413",
+    "email": "propietario12@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 13,
+    "fullName": "Juan Lopez",
+    "phoneNumber": "1119898438",
+    "email": "propietario13@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 14,
+    "fullName": "Juan Lopez",
+    "phoneNumber": "1191755401",
+    "email": "propietario14@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 15,
+    "fullName": "Lucia Diaz",
+    "phoneNumber": "1177185594",
+    "email": "propietario15@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 16,
+    "fullName": "Lucia Alvarez",
+    "phoneNumber": "1164174110",
+    "email": "propietario16@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 17,
+    "fullName": "Elena Gomez",
+    "phoneNumber": "1123989712",
+    "email": "propietario17@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 18,
+    "fullName": "Carlos Fernandez",
+    "phoneNumber": "1142625307",
+    "email": "propietario18@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 19,
+    "fullName": "Juan Romero",
+    "phoneNumber": "1141370920",
+    "email": "propietario19@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 20,
+    "fullName": "Elena Rodriguez",
+    "phoneNumber": "1192207178",
+    "email": "propietario20@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 21,
+    "fullName": "Valentina Sánchez",
+    "phoneNumber": "1112397588",
+    "email": "propietario21@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 22,
+    "fullName": "Diego Alvarez",
+    "phoneNumber": "1118257248",
+    "email": "propietario22@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 23,
+    "fullName": "Ana Diaz",
+    "phoneNumber": "1195893343",
+    "email": "propietario23@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 24,
+    "fullName": "Juan Sánchez",
+    "phoneNumber": "1125791460",
+    "email": "propietario24@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 25,
+    "fullName": "Elena Perez",
+    "phoneNumber": "1144887756",
+    "email": "propietario25@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 26,
+    "fullName": "Carlos Alvarez",
+    "phoneNumber": "1126852800",
+    "email": "propietario26@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 27,
+    "fullName": "Carlos Martinez",
+    "phoneNumber": "1154739555",
+    "email": "propietario27@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 28,
+    "fullName": "Valentina Sánchez",
+    "phoneNumber": "1135346105",
+    "email": "propietario28@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 29,
+    "fullName": "Lucia Diaz",
+    "phoneNumber": "1155977434",
+    "email": "propietario29@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 30,
+    "fullName": "Carlos Diaz",
+    "phoneNumber": "1175292940",
+    "email": "propietario30@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 31,
+    "fullName": "Miguel Rodriguez",
+    "phoneNumber": "1167032797",
+    "email": "propietario31@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 32,
+    "fullName": "Ana Romero",
+    "phoneNumber": "1140033553",
+    "email": "propietario32@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 33,
+    "fullName": "Ana Romero",
+    "phoneNumber": "1185133466",
+    "email": "propietario33@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 34,
+    "fullName": "Mariana Martinez",
+    "phoneNumber": "1183602426",
+    "email": "propietario34@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  },
+  {
+    "id": 35,
+    "fullName": "Miguel Perez",
+    "phoneNumber": "1154113122",
+    "email": "propietario35@mail.com",
+    "privateNotes": "Cliente generado automáticamente."
+  }
+]

@@ -1,0 +1,13 @@
+%section{
+    text-align: center;
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+    box-shadow: 5px 5px 10px $secondary-color-gray
+}
+
+main.container{
+    @include min-width(768PX){
+        padding-top: 7rem;
+    }
+}
+

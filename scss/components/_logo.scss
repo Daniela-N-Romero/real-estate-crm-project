@@ -1,0 +1,9 @@
+
+%small-logo{
+    height: 5rem;
+    margin-left: 1rem; 
+}
+
+.logo{
+    @extend %small-logo;
+}

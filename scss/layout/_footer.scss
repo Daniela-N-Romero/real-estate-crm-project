@@ -1,0 +1,151 @@
+.footer{
+
+    background-color: $secondary-color-light-gray;
+    box-shadow: 0px -3px 5px $secondary-color-dark-gray;
+    position: relative;
+    padding-top: 1rem;
+
+    //DARK THEME
+    &.footer-dark{
+        background-color: $logo-blue;
+        .footer__div{
+            &--li{
+                color: #fff;
+                i{
+                    color: #fff;
+                }
+                p{
+                    color: $secondary-color-dark-gray;
+                }
+                
+            }
+            &--breadcrumbs{
+                li{
+                    .footer__div--link{
+                        color: $secondary-color-dark-gray;
+                    }
+                    .footer__div--current-link{
+                        color: $secondary-color-light-gray;
+                        font-weight: bold;
+                    }
+
+                }
+                }
+
+            
+        }
+    }
+
+    &__div{
+        @include flex-column();
+        align-items: center;
+        text-align: center;
+        width: auto;
+        &--li{
+            color: $logo-color;
+            margin-bottom: .2rem;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            padding-right: 1rem;
+            
+            i{
+                font-size: 1.2rem;
+                border-radius: 20px;
+                padding: 10px;
+                color: $logo-color;
+                margin: 0 5px;
+                transition: 200ms;
+                @include max-width(768px){
+                &.bi-telephone:hover{
+                    background-color: $whatsapp;
+
+                }
+                &.bi-geo-alt:hover{
+                    background-color: $location;
+                }
+                &.bi-envelope:hover{
+                    background-color: $email;
+                }
+                &.bi-instagram:hover{
+                    background-color: $instagram;
+                }                    
+                }
+
+                
+            }
+            p{
+                color: $dark-waves;
+                display: none;
+                margin: 0;
+                padding: 10 px;
+                @include min-width(768px){
+                    display: inline-block;
+                }
+            }
+            
+        }
+        &--breadcrumbs {
+            margin-bottom: 0;
+            font-size: .6rem;
+            font-family: 'poppinsRegular';
+
+            li{
+            display: inline-block;
+            margin-top: .5rem;            
+            @include min-width(992px){
+                margin-bottom: 1rem;
+            }
+            .footer__div--link{
+                color: $dark-waves;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .footer__div--current-link{
+                color: $logo-color;
+            }
+            }
+        }
+        &--contacto{
+            margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            font-size: .7rem;
+                
+            li{
+                p{font-family: 'poppinsRegular'};
+                display: inline-block;
+                @include min-width(768px){
+                    &:nth-child(1):hover{
+                        border: 1px solid $whatsapp;
+                        //color: $whatsapp;
+                    }
+                    &:nth-child(2):hover{
+                        border: 1px solid $location;
+                        //color: $location;
+                    }
+                    &:nth-child(3):hover{
+                        border: 1px solid  $email;
+                        //color: $email;
+                    }
+                    &:nth-child(4):hover{
+                        border: 1px solid $instagram;
+                        //color: $instagram;
+                    }
+                }
+
+            }
+            
+                    
+        }
+        &__datos{
+                min-width: 50%;
+                max-width: 70%;
+                
+        }
+    }
+}
+

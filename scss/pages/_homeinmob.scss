@@ -1,0 +1,191 @@
+.inmo-search {
+    height: 100vh;
+    background-image: url(../../assets/images/properties/_3170148.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    @include min-width(768px) {
+      margin-top: $header-height;
+    }
+  
+    &::after {
+      content: '';
+      inset: 0 0 0 0;
+      background-color: rgba(0, 0, 0, 0.367);
+      position: absolute;
+    }
+  }
+  
+  .inmo-title {
+    text-align: center;
+    color: $logo-blue;
+    font-family: "loverine", cursive;
+    text-shadow: 1px 1px 2px rgb(49, 48, 77);
+    font-size: 3rem;
+    
+  }
+  
+  .inmo-title-white {
+    position: relative;
+    z-index: 100;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgb(84, 84, 86);
+  }
+  
+  // HOME CAROUSEL
+  
+  .carrousel-inmo {
+    margin-top: 10vh;
+    background-color: $logo-blue;
+    border: 3px solid $dark-waves;
+    border-radius: 7px;
+  
+    picture,
+    source,
+    img {
+      width: 100%;
+      height: 40vh;
+      object-fit: contain;
+    }
+  
+    picture {
+      margin-block: 2rem;
+    }
+  }
+  
+  .carousel-item {
+    height: 80vh;
+  
+    @include min-width(768px) {
+      height: 75vh;
+    }
+  }
+  
+  .carousel-item-content {
+    flex: 1;
+    margin: 0 10%;
+    text-align: center;
+    color: $primary-color-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0 5rem 0; // espacio arriba y abajo
+    min-height: 70vh;
+  
+    img {
+      height: 120px;
+    }
+  
+    h2,
+    .topic {
+      color: $light-waves;
+      text-shadow: none;
+    }
+  }
+  
+  .carousel-item-content.team {
+    padding: 3rem 0 5rem 0;
+  
+    h2 {
+      margin-bottom: 2rem;
+    }
+  
+    .team-member {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  
+      img.member-picture {
+        margin: 0;
+        max-height: 160px;
+        object-fit: contain;
+      }
+  
+      .member-description {
+        padding: 10px;
+        background-color: $primary-color-gray;
+        color: black;
+        border-radius: 0.4em;
+        max-width: 400px;
+  
+        h3 {
+          font-size: 1rem;
+          color: $dark-waves;
+          font-weight: bold;
+        }
+  
+        p {
+          font-size: 0.8rem;
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+  /* Estilo para los puntos de la paginación */
+  .swiper-pagination-bullet {
+    background-color: white; /* Color de los puntos inactivos */
+  }
+  
+  /* Estilo para los puntos activos */
+  .swiper-pagination-bullet-active {
+    background-color: $light-waves; /* O el color que prefieras para los puntos activos */
+  }
+
+  //SECTIONS 
+
+  .homegallery-inmo{
+    margin-top: 5rem;
+  }
+
+
+  //PROPERTIES SWIPER
+  .properties-swiper {
+    padding: 4rem 0;
+  }
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  /* Limita el ancho del swiper y lo centra */
+.property-swiper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5rem; /* Espacio a los lados para que no tape flechas */
+  position: relative;
+  overflow: visible; /* Permite que las flechas se vean por fuera */
+}
+
+/* Ajustes generales para las tarjetas */
+.property-swiper-container .swiper-slide-300 {
+  width: auto;
+  max-width: 300px; /* Ancho máximo por tarjeta */
+  flex-shrink: 0;
+}
+
+/* Flechas visibles, separadas del contenido */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Que no se corten en móviles */
+.swiper {
+  overflow: visible;
+}
+

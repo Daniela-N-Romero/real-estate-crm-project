@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "fullName": "Juan Fernandez",
+    "agencyName": "Inmobiliaria Mariana",
+    "phoneNumber": "1195242637"
+  },
+  {
+    "id": 2,
+    "fullName": "Mariana Martinez",
+    "agencyName": "Inmobiliaria Elena",
+    "phoneNumber": "1141398421"
+  },
+  {
+    "id": 3,
+    "fullName": "Roberto Alvarez",
+    "agencyName": "Inmobiliaria Carlos",
+    "phoneNumber": "1115210383"
+  },
+  {
+    "id": 4,
+    "fullName": "Juan Gomez",
+    "agencyName": "Inmobiliaria Pedro",
+    "phoneNumber": "1156225601"
+  },
+  {
+    "id": 5,
+    "fullName": "Ana Lopez",
+    "agencyName": "Inmobiliaria Ana",
+    "phoneNumber": "1192973773"
+  },
+  {
+    "id": 6,
+    "fullName": "Miguel Perez",
+    "agencyName": "Inmobiliaria Roberto",
+    "phoneNumber": "1115554314"
+  },
+  {
+    "id": 7,
+    "fullName": "Ana Martinez",
+    "agencyName": "Inmobiliaria Elena",
+    "phoneNumber": "1177018401"
+  },
+  {
+    "id": 8,
+    "fullName": "Sofia Perez",
+    "agencyName": "Inmobiliaria Miguel",
+    "phoneNumber": "1136434899"
+  },
+  {
+    "id": 9,
+    "fullName": "Pedro Gomez",
+    "agencyName": "Inmobiliaria Ana",
+    "phoneNumber": "1154687178"
+  },
+  {
+    "id": 10,
+    "fullName": "Mariana Gomez",
+    "agencyName": "Inmobiliaria Ana",
+    "phoneNumber": "1112298241"
+  },
+  {
+    "id": 11,
+    "fullName": "Sofia Sánchez",
+    "agencyName": "Inmobiliaria Roberto",
+    "phoneNumber": "1113268853"
+  },
+  {
+    "id": 12,
+    "fullName": "Juan Diaz",
+    "agencyName": "Inmobiliaria Valentina",
+    "phoneNumber": "1119256478"
+  },
+  {
+    "id": 13,
+    "fullName": "Pedro Sánchez",
+    "agencyName": "Inmobiliaria Miguel",
+    "phoneNumber": "1190216999"
+  }
+]

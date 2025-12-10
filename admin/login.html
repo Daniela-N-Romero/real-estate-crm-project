@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Panel de Administración</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f4f4f4; }
+        .login-container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .login-container h2 { text-align: center; margin-bottom: 20px; }
+        .login-container label { display: block; margin-bottom: 5px; }
+        .login-container input[type="text"], .login-container input[type="password"] { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 4px; }
+        .login-container button { width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .login-container button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Acceso al Panel de Administración</h2>
+        <form id="loginForm"> <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+            <p id="errorMessage" style="color: red; margin-top: 10px;"></p> </form>
+        </form>
+    </div>
+</body>
+<script src="js/login.js"></script>
+</html>

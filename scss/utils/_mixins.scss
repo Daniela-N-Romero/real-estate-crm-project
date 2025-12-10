@@ -1,0 +1,42 @@
+// Mixins para Responsive Design y breakpoints
+
+@mixin min-width($minwidth){
+    @media screen and (min-width: $minwidth) {
+        @content;
+    }
+}
+
+@mixin max-width($maxwidth){
+    @media screen and (max-width: $maxwidth) {
+        @content;
+    }
+}
+
+
+// Mixins de animaciones
+
+
+
+// Mixins sin variables
+
+
+// Mixins con variables 
+@mixin flex-wrap($justify: space-around){
+    display: flex;
+    justify-content: $justify;
+    flex-wrap: wrap;
+}
+
+@mixin flex($justifyc:center, $alignc:center){
+    display: flex;
+    flex-direction: row;
+    justify-content: $justifyc;
+    align-content: $alignc;
+}
+
+@mixin flex-column($justifyc:center, $alignc:center){
+    display: flex;
+    flex-direction: column;
+    justify-content: $justifyc;
+    align-content: $alignc;
+}
