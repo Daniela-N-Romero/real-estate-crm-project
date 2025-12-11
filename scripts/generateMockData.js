@@ -32,25 +32,24 @@ const locations = [
 // 2. DICCIONARIO DE IMÁGENES POR TIPO (Visualmente coherentes)
 const imagePools = {
     vivienda: [
-        "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?q=80&w=800", // Casa moderna
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800", // Casa linda
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800", // Casa blanca
-        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"  // Frente
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800", 
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800", 
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"  
     ],
     lote: [
-        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800", // Campo verde
-        "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800", // Pasto
-        "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800"  // Terreno baldio
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+        "https://images.unsplash.com/photo-1591389703635-e15a07b842d7?q=80&w=800", 
+        "https://images.unsplash.com/photo-1629016943072-0bf0ce4e2608?q=80&w=800"  
     ],
     industrial: [
-        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800", // Galpón interior
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",    // Fábrica ext
-        "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800"   // Depósito
+        "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800", 
+        "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800",    
+        "https://images.unsplash.com/photo-1684695749267-233af13276d0?q=80&w=800"  
     ],
     comercial: [
-        "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800", // Local ropa
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800", // Oficina
-        "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800"  // Local vidrio
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800", 
+        "https://images.unsplash.com/photo-1533922922960-9fceb9ef4733?q=80&w=800",  
+        "https://images.unsplash.com/photo-1564419965579-5da68ffdf3af?q=80&w=800"  
     ]
 };
 
