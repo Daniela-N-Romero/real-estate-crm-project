@@ -1,5 +1,3 @@
-// js/property-details.js
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- 1. LÓGICA PARA OBTENER EL ID ---
@@ -11,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (pathParts[1] === 'propiedad' && pathParts[2]) {
         // El ID es ahora la tercera parte del path
         propertyId = pathParts[2];
+        console.log('ID de propiedad obtenido de la URL amigable:', propertyId);
     } else {
         // Si no, mantenemos la lógica antigua por si acaso (fallback)
         propertyId = new URLSearchParams(window.location.search).get('id');

@@ -389,9 +389,8 @@ const connectDB = async () => {
     // --- IMPORTANTE PARA LOCALHOST ---
     // Descomenta esta línea en tu PC LOCAL la primera vez para crear las tablas nuevas.
     // En el SERVIDOR DE PRODUCCIÓN, déjala comentada.
-    await sequelize.sync({ alter: true }); 
-    
-    console.log("Tablas sincronizadas.");
+    //await sequelize.sync({ alter: true }); 
+    //console.log("Tablas sincronizadas.");
   } catch (error) {
     console.error("No se pudo conectar o sincronizar:", error);
     process.exit(1);
