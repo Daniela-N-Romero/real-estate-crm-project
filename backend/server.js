@@ -53,9 +53,11 @@ app.use((req, res, next) => {
 // Conexión a la base de datos e inicio del servidor
 connectDB().then(() => {
     app.listen(port, () => {
-        console.log(`Servidor Express escuchando en http://localhost:${port}`);
-        console.log(`Panel de administración en: http://localhost:${port}/admin/login.html`);
-        console.log(`Sitio público en: http://localhost:${port}/`);
+        const baseUrl = process.env.RENDER_EXTERNAL_URL || `http://localhost:${port}`;
+
+        console.log(`🚀 Servidor arrancado exitosamente.`);
+        console.log(`🌐 Sitio público: ${baseUrl}`);
+        console.log(`🔐 Panel Admin: ${baseUrl}/admin/login.html`);
     });
 }).catch(err => {
     console.error('Fallo al iniciar el servidor debido a un error de base de datos:', err);
