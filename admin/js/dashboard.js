@@ -2,7 +2,7 @@
 let allProperties = [];
 
 // NUEVA VARIABLE GLOBAL PARA EL FILTRO DE ORIGEN
-let currentSourceFilter = 'ms_propia'; // Por defecto: Cartera Propia
+let currentSourceFilter = 'propia'; // Por defecto: Cartera Propia
 
 // --- NUEVA FUNCIÓN: Filtrar por Origen (Propia vs Colega) ---
 function filterPropertiesBySource(source) {
@@ -12,7 +12,7 @@ function filterPropertiesBySource(source) {
     const btnMS = document.getElementById('tab-ms');
     const btnCol = document.getElementById('tab-colleagues');
     
-    if (source === 'ms_propia') {
+    if (source === 'propia') {
         btnMS.classList.add('active', 'text-primary');
         btnMS.classList.remove('text-secondary');
         
@@ -238,7 +238,7 @@ const searchBar = document.getElementById('search-bar');
     // FILTRADO MAESTRO
     let propertiesToDisplay = allProperties.filter(property => {
         // 1. Filtro de Origen (Propia vs Colega) -> LÓGICA ROBUSTA
-        let propSource = property.propertySource || 'ms_propia'; // Si es null, asumimos propia
+        let propSource = property.propertySource || 'propia'; // Si es null, asumimos propia
         
         // Corrección para propiedades viejas que tengan null pero tengan colegaId
         if (!property.propertySource && property.colleagueId) propSource = 'colega';
