@@ -1,25 +1,27 @@
 [
   {
-    "name": "Industrial en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 248133000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Quilmes",
+    "name": "Casa en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 436658,
+    "currency": "USD",
+    "type": "vivienda",
+    "subtype": "casa",
+    "category": "venta",
+    "locality": "Berazategui",
     "neighbourhood": "Centro",
-    "address": "Calle 70 Nº 308",
-    "totalSurface": 585,
-    "coveredSurface": 228,
+    "address": "Calle 56 Nº 1677",
+    "latitude": -34.76341026467265,
+    "longitude": -58.20848226433187,
+    "totalSurface": 516,
+    "coveredSurface": 236,
     "isPublished": true,
     "propertySource": "propia",
-    "ownerId": 34,
+    "ownerId": 8,
     "agentId": 4,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 3,
@@ -27,26 +29,57 @@
     }
   },
   {
-    "name": "Lote en El Pato - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 331327,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
+    "name": "Ph en La Plata - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 320397000,
+    "currency": "ARS",
+    "type": "vivienda",
+    "subtype": "ph",
     "category": "venta",
-    "locality": "El Pato",
+    "locality": "La Plata",
     "neighbourhood": "Centro",
-    "address": "Calle 45 Nº 4352",
-    "totalSurface": 297,
-    "coveredSurface": 159,
+    "address": "Calle 66 Nº 2145",
+    "latitude": -34.9254665098194,
+    "longitude": -57.94982500358511,
+    "totalSurface": 309,
+    "coveredSurface": 177,
     "isPublished": true,
     "propertySource": "propia",
-    "ownerId": 33,
+    "ownerId": 4,
     "agentId": 4,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?q=80&w=800",
+      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Local en La Plata - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 162427,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "alquiler",
+    "locality": "La Plata",
+    "neighbourhood": "Centro",
+    "address": "Calle 76 Nº 647",
+    "latitude": -34.916728631917245,
+    "longitude": -57.95103295516422,
+    "totalSurface": 462,
+    "coveredSurface": 73,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 13,
+    "agentId": 4,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 3,
@@ -54,53 +87,57 @@
     }
   },
   {
-    "name": "Industrial en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 133076,
+    "name": "Local en City Bell - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 485151700,
+    "currency": "ARS",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "venta",
+    "locality": "City Bell",
+    "neighbourhood": "Centro",
+    "address": "Calle 25 Nº 3481",
+    "latitude": -34.87184672185401,
+    "longitude": -58.04809270498683,
+    "totalSurface": 945,
+    "coveredSurface": 151,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 2,
+    "agentId": 3,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 2,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Nave_industrial en La Plata - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 490027,
     "currency": "USD",
     "type": "industrial",
     "subtype": "nave_industrial",
     "category": "venta",
-    "locality": "Ranelagh",
+    "locality": "La Plata",
     "neighbourhood": "Centro",
-    "address": "Calle 39 Nº 4706",
-    "totalSurface": 836,
-    "coveredSurface": 95,
+    "address": "Calle 75 Nº 3368",
+    "latitude": -34.919899819868284,
+    "longitude": -57.953750926790036,
+    "totalSurface": 597,
+    "coveredSurface": 291,
     "isPublished": true,
     "propertySource": "propia",
-    "ownerId": 33,
-    "agentId": 4,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Comercial en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 173924000,
-    "currency": "ARS",
-    "type": "comercial",
-    "subtype": "local",
-    "category": "alquiler",
-    "locality": "Quilmes",
-    "neighbourhood": "Centro",
-    "address": "Calle 7 Nº 1572",
-    "totalSurface": 628,
-    "coveredSurface": 235,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 10,
+    "ownerId": 1,
     "agentId": 1,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 2,
@@ -108,269 +145,173 @@
     }
   },
   {
-    "name": "Vivienda en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 304678,
-    "currency": "USD",
-    "type": "vivienda",
-    "subtype": "casa",
-    "category": "venta",
-    "locality": "Quilmes",
-    "neighbourhood": "Centro",
-    "address": "Calle 70 Nº 3980",
-    "totalSurface": 954,
-    "coveredSurface": 102,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 27,
-    "agentId": 3,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 3,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Lote en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 314640,
-    "currency": "USD",
+    "name": "Terreno en Hudson - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 48560600,
+    "currency": "ARS",
     "type": "lote",
     "subtype": "terreno",
     "category": "alquiler",
     "locality": "Hudson",
     "neighbourhood": "Centro",
-    "address": "Calle 6 Nº 2664",
-    "totalSurface": 718,
-    "coveredSurface": 285,
+    "address": "Calle 28 Nº 827",
+    "latitude": -34.79677815349853,
+    "longitude": -58.15949615787844,
+    "totalSurface": 886,
+    "coveredSurface": 62,
     "isPublished": true,
     "propertySource": "propia",
-    "ownerId": 26,
+    "ownerId": 5,
     "agentId": 3,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800"
     ],
     "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 1
+      "ambientes": 3,
+      "banos": 2
     }
   },
   {
-    "name": "Lote en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 247760,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Quilmes",
-    "neighbourhood": "Centro",
-    "address": "Calle 81 Nº 4635",
-    "totalSurface": 363,
-    "coveredSurface": 287,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 22,
-    "agentId": 4,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Lote en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 372202000,
+    "name": "Terreno en Quilmes - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 87188200,
     "currency": "ARS",
     "type": "lote",
     "subtype": "terreno",
-    "category": "alquiler",
+    "category": "venta",
     "locality": "Quilmes",
     "neighbourhood": "Centro",
-    "address": "Calle 98 Nº 1047",
-    "totalSurface": 972,
-    "coveredSurface": 294,
+    "address": "Calle 12 Nº 4247",
+    "latitude": -34.72464040739326,
+    "longitude": -58.25686961593956,
+    "totalSurface": 548,
+    "coveredSurface": 150,
     "isPublished": true,
     "propertySource": "propia",
     "ownerId": 35,
     "agentId": 5,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800"
     ],
     "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
+      "ambientes": 5,
+      "banos": 2
     }
   },
   {
-    "name": "Lote en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 338839,
+    "name": "Local en Quilmes - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 106679,
     "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Bernal",
-    "neighbourhood": "Centro",
-    "address": "Calle 1 Nº 3994",
-    "totalSurface": 444,
-    "coveredSurface": 95,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 24,
-    "agentId": 1,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 3,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Lote en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 389184,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
+    "type": "comercial",
+    "subtype": "local",
     "category": "venta",
-    "locality": "Bernal",
+    "locality": "Quilmes",
     "neighbourhood": "Centro",
-    "address": "Calle 62 Nº 2703",
-    "totalSurface": 593,
-    "coveredSurface": 244,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 29,
-    "agentId": 5,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Vivienda en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 268557000,
-    "currency": "ARS",
-    "type": "vivienda",
-    "subtype": "casa",
-    "category": "alquiler",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 93 Nº 4580",
-    "totalSurface": 461,
-    "coveredSurface": 288,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 1,
-    "agentId": 5,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Vivienda en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 114403000,
-    "currency": "ARS",
-    "type": "vivienda",
-    "subtype": "departamento",
-    "category": "alquiler",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 77 Nº 1810",
-    "totalSurface": 501,
-    "coveredSurface": 184,
+    "address": "Calle 50 Nº 323",
+    "latitude": -34.71843967582631,
+    "longitude": -58.24751027330025,
+    "totalSurface": 669,
+    "coveredSurface": 147,
     "isPublished": true,
     "propertySource": "propia",
     "ownerId": 11,
     "agentId": 2,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
     ],
     "specificCharacteristics": {
-      "ambientes": 3,
+      "ambientes": 2,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Oficina en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 346833300,
+    "currency": "ARS",
+    "type": "comercial",
+    "subtype": "oficina",
+    "category": "alquiler",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 5 Nº 4054",
+    "latitude": -34.7655123947978,
+    "longitude": -58.20858095625745,
+    "totalSurface": 227,
+    "coveredSurface": 195,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 19,
+    "agentId": 2,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 4,
       "banos": 2
     }
   },
   {
-    "name": "Comercial en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 303782,
+    "name": "Local en Hudson - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 254820,
     "currency": "USD",
     "type": "comercial",
     "subtype": "local",
     "category": "venta",
-    "locality": "Ranelagh",
+    "locality": "Hudson",
     "neighbourhood": "Centro",
-    "address": "Calle 56 Nº 3060",
-    "totalSurface": 779,
-    "coveredSurface": 115,
+    "address": "Calle 94 Nº 401",
+    "latitude": -34.791966806518964,
+    "longitude": -58.15189456794073,
+    "totalSurface": 636,
+    "coveredSurface": 250,
     "isPublished": true,
     "propertySource": "propia",
-    "ownerId": 23,
+    "ownerId": 28,
     "agentId": 4,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
     ],
     "specificCharacteristics": {
-      "ambientes": 3,
-      "banos": 2
+      "ambientes": 4,
+      "banos": 3
     }
   },
   {
-    "name": "Comercial en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 402887,
+    "name": "Galpon en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 182977,
     "currency": "USD",
-    "type": "comercial",
-    "subtype": "local",
-    "category": "alquiler",
-    "locality": "Bernal",
+    "type": "industrial",
+    "subtype": "galpon",
+    "category": "venta",
+    "locality": "Ranelagh",
     "neighbourhood": "Centro",
-    "address": "Calle 68 Nº 3263",
-    "totalSurface": 668,
-    "coveredSurface": 164,
+    "address": "Calle 91 Nº 3688",
+    "latitude": -34.79293294186008,
+    "longitude": -58.19560675646017,
+    "totalSurface": 789,
+    "coveredSurface": 245,
     "isPublished": true,
     "propertySource": "propia",
-    "ownerId": 2,
-    "agentId": 2,
+    "ownerId": 32,
+    "agentId": 1,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800",
+      "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 5,
@@ -378,53 +319,318 @@
     }
   },
   {
-    "name": "Lote en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 96823,
+    "name": "Terreno en La Plata - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 68579500,
+    "currency": "ARS",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "venta",
+    "locality": "La Plata",
+    "neighbourhood": "Centro",
+    "address": "Calle 40 Nº 2969",
+    "latitude": -34.919766316022354,
+    "longitude": -57.96121908641602,
+    "totalSurface": 981,
+    "coveredSurface": 218,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 10,
+    "agentId": 2,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800",
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Local en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 454002,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "venta",
+    "locality": "Ranelagh",
+    "neighbourhood": "Centro",
+    "address": "Calle 35 Nº 3416",
+    "latitude": -34.782194825602105,
+    "longitude": -58.205182619980064,
+    "totalSurface": 461,
+    "coveredSurface": 260,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 3,
+    "agentId": 5,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 4,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Nave_industrial en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 377076700,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "alquiler",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 56 Nº 2948",
+    "latitude": -34.7699373631658,
+    "longitude": -58.20659541071178,
+    "totalSurface": 218,
+    "coveredSurface": 85,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 10,
+    "agentId": 4,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Terreno en Hudson - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 54237,
     "currency": "USD",
     "type": "lote",
     "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Quilmes",
+    "category": "venta",
+    "locality": "Hudson",
     "neighbourhood": "Centro",
-    "address": "Calle 58 Nº 4280",
-    "totalSurface": 446,
-    "coveredSurface": 209,
+    "address": "Calle 57 Nº 1018",
+    "latitude": -34.78792498913048,
+    "longitude": -58.159429064253786,
+    "totalSurface": 302,
+    "coveredSurface": 227,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 7,
+    "agentId": 2,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800",
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 4,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Local en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 308558800,
+    "currency": "ARS",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "alquiler",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 16 Nº 1382",
+    "latitude": -34.761509702875486,
+    "longitude": -58.217299973327314,
+    "totalSurface": 337,
+    "coveredSurface": 53,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 34,
+    "agentId": 5,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800",
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Casa en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 402413000,
+    "currency": "ARS",
+    "type": "vivienda",
+    "subtype": "casa",
+    "category": "venta",
+    "locality": "Ranelagh",
+    "neighbourhood": "Centro",
+    "address": "Calle 72 Nº 1036",
+    "latitude": -34.78152563423211,
+    "longitude": -58.20184339902807,
+    "totalSurface": 698,
+    "coveredSurface": 138,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 20,
+    "agentId": 3,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?q=80&w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 4,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Nave_industrial en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 291196400,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "venta",
+    "locality": "Ranelagh",
+    "neighbourhood": "Centro",
+    "address": "Calle 6 Nº 3188",
+    "latitude": -34.78885021205165,
+    "longitude": -58.20101034013867,
+    "totalSurface": 354,
+    "coveredSurface": 92,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 29,
+    "agentId": 3,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 2,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Departamento en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 385101200,
+    "currency": "ARS",
+    "type": "vivienda",
+    "subtype": "departamento",
+    "category": "venta",
+    "locality": "Ranelagh",
+    "neighbourhood": "Centro",
+    "address": "Calle 19 Nº 3831",
+    "latitude": -34.78160814864145,
+    "longitude": -58.205736793003666,
+    "totalSurface": 933,
+    "coveredSurface": 299,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 26,
+    "agentId": 4,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Terreno en Hudson - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 44552200,
+    "currency": "ARS",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "venta",
+    "locality": "Hudson",
+    "neighbourhood": "Centro",
+    "address": "Calle 12 Nº 4006",
+    "latitude": -34.79239210486326,
+    "longitude": -58.155229093348076,
+    "totalSurface": 978,
+    "coveredSurface": 265,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 27,
+    "agentId": 4,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800",
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Galpon en La Plata - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 66268,
+    "currency": "USD",
+    "type": "industrial",
+    "subtype": "galpon",
+    "category": "venta",
+    "locality": "La Plata",
+    "neighbourhood": "Centro",
+    "address": "Calle 37 Nº 4038",
+    "latitude": -34.926699906623696,
+    "longitude": -57.95568990842066,
+    "totalSurface": 939,
+    "coveredSurface": 193,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 14,
+    "agentId": 2,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Terreno en Bernal - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 83728700,
+    "currency": "ARS",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "alquiler",
+    "locality": "Bernal",
+    "neighbourhood": "Centro",
+    "address": "Calle 40 Nº 2873",
+    "latitude": -34.71102023432293,
+    "longitude": -58.279884568897366,
+    "totalSurface": 226,
+    "coveredSurface": 237,
     "isPublished": true,
     "propertySource": "propia",
     "ownerId": 4,
     "agentId": 5,
     "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Vivienda en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 130368000,
-    "currency": "ARS",
-    "type": "vivienda",
-    "subtype": "ph",
-    "category": "alquiler",
-    "locality": "Hudson",
-    "neighbourhood": "Centro",
-    "address": "Calle 24 Nº 384",
-    "totalSurface": 366,
-    "coveredSurface": 278,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 31,
-    "agentId": 1,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 2,
@@ -432,809 +638,231 @@
     }
   },
   {
-    "name": "Comercial en El Pato - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 357870000,
-    "currency": "ARS",
-    "type": "comercial",
-    "subtype": "local",
-    "category": "venta",
-    "locality": "El Pato",
-    "neighbourhood": "Centro",
-    "address": "Calle 31 Nº 2632",
-    "totalSurface": 778,
-    "coveredSurface": 146,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 14,
-    "agentId": 5,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Industrial en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 265279000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "venta",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 59 Nº 1729",
-    "totalSurface": 503,
-    "coveredSurface": 97,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 6,
-    "agentId": 5,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Vivienda en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 314125000,
-    "currency": "ARS",
-    "type": "vivienda",
-    "subtype": "departamento",
-    "category": "venta",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 1 Nº 1877",
-    "totalSurface": 302,
-    "coveredSurface": 136,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 13,
-    "agentId": 2,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Lote en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 160436000,
-    "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 35 Nº 1999",
-    "totalSurface": 714,
-    "coveredSurface": 260,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 9,
-    "agentId": 2,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Industrial en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 215391000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Bernal",
-    "neighbourhood": "Centro",
-    "address": "Calle 6 Nº 3334",
-    "totalSurface": 367,
-    "coveredSurface": 89,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 27,
-    "agentId": 3,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Vivienda en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 172230,
-    "currency": "USD",
-    "type": "vivienda",
-    "subtype": "ph",
-    "category": "alquiler",
-    "locality": "Hudson",
-    "neighbourhood": "Centro",
-    "address": "Calle 41 Nº 3604",
-    "totalSurface": 341,
-    "coveredSurface": 292,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 19,
-    "agentId": 5,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Industrial en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 476644000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 68 Nº 1196",
-    "totalSurface": 626,
-    "coveredSurface": 100,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 27,
-    "agentId": 2,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Lote en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 82434000,
-    "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "venta",
-    "locality": "Hudson",
-    "neighbourhood": "Centro",
-    "address": "Calle 88 Nº 2475",
-    "totalSurface": 811,
-    "coveredSurface": 162,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 23,
-    "agentId": 4,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Vivienda en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 281013,
-    "currency": "USD",
-    "type": "vivienda",
-    "subtype": "departamento",
-    "category": "alquiler",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 7 Nº 4104",
-    "totalSurface": 740,
-    "coveredSurface": 261,
-    "isPublished": true,
-    "propertySource": "propia",
-    "ownerId": 22,
-    "agentId": 1,
-    "colleagueId": null,
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Industrial en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 110031000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 60 Nº 2147",
-    "totalSurface": 352,
-    "coveredSurface": 109,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 4,
-    "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Vivienda en El Pato - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 294475000,
-    "currency": "ARS",
-    "type": "vivienda",
-    "subtype": "ph",
-    "category": "venta",
-    "locality": "El Pato",
-    "neighbourhood": "Centro",
-    "address": "Calle 68 Nº 3839",
-    "totalSurface": 310,
-    "coveredSurface": 67,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 13,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Industrial en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 228668000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 52 Nº 2493",
-    "totalSurface": 946,
-    "coveredSurface": 106,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 6,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Lote en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 269175,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "venta",
-    "locality": "Bernal",
-    "neighbourhood": "Centro",
-    "address": "Calle 29 Nº 155",
-    "totalSurface": 747,
-    "coveredSurface": 165,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 4,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Vivienda en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 398771000,
-    "currency": "ARS",
-    "type": "vivienda",
-    "subtype": "ph",
-    "category": "alquiler",
-    "locality": "Quilmes",
-    "neighbourhood": "Centro",
-    "address": "Calle 79 Nº 1314",
-    "totalSurface": 946,
-    "coveredSurface": 150,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 3,
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Vivienda en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 154733,
-    "currency": "USD",
-    "type": "vivienda",
-    "subtype": "departamento",
-    "category": "venta",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 36 Nº 1946",
-    "totalSurface": 580,
-    "coveredSurface": 69,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 7,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Lote en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 163881,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 29 Nº 4285",
-    "totalSurface": 780,
-    "coveredSurface": 144,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 5,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 3,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Vivienda en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 131542000,
+    "name": "Casa en El Pato - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 224060100,
     "currency": "ARS",
     "type": "vivienda",
     "subtype": "casa",
     "category": "alquiler",
-    "locality": "Hudson",
-    "neighbourhood": "Centro",
-    "address": "Calle 61 Nº 3525",
-    "totalSurface": 892,
-    "coveredSurface": 175,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 1,
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 3,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Industrial en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 288138,
-    "currency": "USD",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "venta",
-    "locality": "Bernal",
-    "neighbourhood": "Centro",
-    "address": "Calle 8 Nº 3608",
-    "totalSurface": 634,
-    "coveredSurface": 180,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 3,
-    "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Industrial en El Pato - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 122004000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
     "locality": "El Pato",
     "neighbourhood": "Centro",
-    "address": "Calle 86 Nº 369",
-    "totalSurface": 697,
-    "coveredSurface": 207,
+    "address": "Calle 28 Nº 2906",
+    "latitude": -34.87425109153921,
+    "longitude": -58.178935477227924,
+    "totalSurface": 917,
+    "coveredSurface": 154,
     "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 4,
+    "propertySource": "propia",
+    "ownerId": 4,
+    "agentId": 1,
+    "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 5,
-      "banos": 1
+      "banos": 2
     }
   },
   {
-    "name": "Comercial en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 384605,
+    "name": "Local en Bernal - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 468863,
     "currency": "USD",
     "type": "comercial",
     "subtype": "local",
-    "category": "alquiler",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 10 Nº 4717",
-    "totalSurface": 707,
-    "coveredSurface": 219,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 10,
-    "images": [
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Lote en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 368268,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "venta",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 90 Nº 1927",
-    "totalSurface": 268,
-    "coveredSurface": 64,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 11,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Lote en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 180131000,
-    "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Berazategui",
-    "neighbourhood": "Centro",
-    "address": "Calle 25 Nº 2384",
-    "totalSurface": 757,
-    "coveredSurface": 194,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 11,
-    "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 2,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Comercial en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 420142000,
-    "currency": "ARS",
-    "type": "comercial",
-    "subtype": "local",
-    "category": "venta",
-    "locality": "Quilmes",
-    "neighbourhood": "Centro",
-    "address": "Calle 83 Nº 4823",
-    "totalSurface": 310,
-    "coveredSurface": 75,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 6,
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Lote en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 463286,
-    "currency": "USD",
-    "type": "lote",
-    "subtype": "terreno",
     "category": "venta",
     "locality": "Bernal",
     "neighbourhood": "Centro",
-    "address": "Calle 31 Nº 2225",
-    "totalSurface": 685,
-    "coveredSurface": 142,
+    "address": "Calle 60 Nº 965",
+    "latitude": -34.703321993099415,
+    "longitude": -58.28029600825059,
+    "totalSurface": 812,
+    "coveredSurface": 160,
     "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 3,
+    "propertySource": "propia",
+    "ownerId": 21,
+    "agentId": 1,
+    "colleagueId": null,
     "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 1
-    }
-  },
-  {
-    "name": "Lote en Ranelagh - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 164962000,
-    "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Ranelagh",
-    "neighbourhood": "Centro",
-    "address": "Calle 78 Nº 4898",
-    "totalSurface": 461,
-    "coveredSurface": 238,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 4,
-    "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
-      "banos": 3
-    }
-  },
-  {
-    "name": "Industrial en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 393220000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "venta",
-    "locality": "Bernal",
-    "neighbourhood": "Centro",
-    "address": "Calle 58 Nº 3021",
-    "totalSurface": 450,
-    "coveredSurface": 258,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 1,
-    "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Industrial en Quilmes - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 418452000,
-    "currency": "ARS",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Quilmes",
-    "neighbourhood": "Centro",
-    "address": "Calle 86 Nº 247",
-    "totalSurface": 480,
-    "coveredSurface": 284,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 5,
-    "images": [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 3,
-      "banos": 2
-    }
-  },
-  {
-    "name": "Industrial en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 86486,
-    "currency": "USD",
-    "type": "industrial",
-    "subtype": "nave_industrial",
-    "category": "alquiler",
-    "locality": "Hudson",
-    "neighbourhood": "Centro",
-    "address": "Calle 43 Nº 4645",
-    "totalSurface": 702,
-    "coveredSurface": 276,
-    "isPublished": true,
-    "propertySource": "colega",
-    "ownerId": null,
-    "agentId": null,
-    "colleagueId": 2,
-    "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
-    ],
-    "specificCharacteristics": {
-      "ambientes": 5,
       "banos": 1
     }
   },
   {
-    "name": "Comercial en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 242893000,
+    "name": "Terreno en El Pato - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 67402500,
     "currency": "ARS",
-    "type": "comercial",
-    "subtype": "local",
+    "type": "lote",
+    "subtype": "terreno",
     "category": "venta",
-    "locality": "Hudson",
+    "locality": "El Pato",
     "neighbourhood": "Centro",
-    "address": "Calle 14 Nº 3953",
-    "totalSurface": 674,
-    "coveredSurface": 174,
+    "address": "Calle 68 Nº 1757",
+    "latitude": -34.86755732690423,
+    "longitude": -58.18125999629235,
+    "totalSurface": 317,
+    "coveredSurface": 190,
+    "isPublished": true,
+    "propertySource": "propia",
+    "ownerId": 35,
+    "agentId": 4,
+    "colleagueId": null,
+    "images": [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Galpon en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 409555300,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "galpon",
+    "category": "alquiler",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 25 Nº 221",
+    "latitude": -34.760462588694985,
+    "longitude": -58.21458849892732,
+    "totalSurface": 582,
+    "coveredSurface": 231,
     "isPublished": true,
     "propertySource": "colega",
     "ownerId": null,
     "agentId": null,
     "colleagueId": 9,
     "images": [
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800"
     ],
     "specificCharacteristics": {
-      "ambientes": 4,
-      "banos": 2
+      "ambientes": 5,
+      "banos": 1
     }
   },
   {
-    "name": "Lote en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 228426000,
+    "name": "Nave_industrial en El Pato - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 206877000,
     "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "alquiler",
-    "locality": "Berazategui",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "venta",
+    "locality": "El Pato",
     "neighbourhood": "Centro",
-    "address": "Calle 68 Nº 3293",
-    "totalSurface": 526,
-    "coveredSurface": 142,
+    "address": "Calle 38 Nº 4536",
+    "latitude": -34.86599674624388,
+    "longitude": -58.18201187990525,
+    "totalSurface": 523,
+    "coveredSurface": 263,
     "isPublished": true,
     "propertySource": "colega",
     "ownerId": null,
     "agentId": null,
-    "colleagueId": 1,
+    "colleagueId": 12,
     "images": [
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Nave_industrial en Bernal - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 435243,
+    "currency": "USD",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "venta",
+    "locality": "Bernal",
+    "neighbourhood": "Centro",
+    "address": "Calle 98 Nº 335",
+    "latitude": -34.7048682632521,
+    "longitude": -58.27791194470216,
+    "totalSurface": 673,
+    "coveredSurface": 66,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 12,
+    "images": [
+      "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800",
+      "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Local en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 276268,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "alquiler",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 93 Nº 311",
+    "latitude": -34.76645252641861,
+    "longitude": -58.214100826531215,
+    "totalSurface": 692,
+    "coveredSurface": 127,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 6,
+    "images": [
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800",
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Oficina en Quilmes - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 144353000,
+    "currency": "ARS",
+    "type": "comercial",
+    "subtype": "oficina",
+    "category": "alquiler",
+    "locality": "Quilmes",
+    "neighbourhood": "Centro",
+    "address": "Calle 100 Nº 2062",
+    "latitude": -34.719153614364565,
+    "longitude": -58.25896758169265,
+    "totalSurface": 499,
+    "coveredSurface": 277,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 2,
@@ -1242,53 +870,231 @@
     }
   },
   {
-    "name": "Lote en Berazategui - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 236860000,
-    "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
-    "category": "venta",
+    "name": "Oficina en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 172662,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "oficina",
+    "category": "alquiler",
     "locality": "Berazategui",
     "neighbourhood": "Centro",
-    "address": "Calle 81 Nº 630",
-    "totalSurface": 781,
-    "coveredSurface": 123,
+    "address": "Calle 51 Nº 1225",
+    "latitude": -34.76117910705585,
+    "longitude": -58.205630982325445,
+    "totalSurface": 434,
+    "coveredSurface": 80,
     "isPublished": true,
     "propertySource": "colega",
     "ownerId": null,
     "agentId": null,
-    "colleagueId": 4,
+    "colleagueId": 13,
     "images": [
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
     ],
     "specificCharacteristics": {
-      "ambientes": 2,
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Nave_industrial en Quilmes - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 206998000,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "alquiler",
+    "locality": "Quilmes",
+    "neighbourhood": "Centro",
+    "address": "Calle 76 Nº 2403",
+    "latitude": -34.72810723237165,
+    "longitude": -58.25099537583487,
+    "totalSurface": 359,
+    "coveredSurface": 139,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 6,
+    "images": [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Local en City Bell - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 189337500,
+    "currency": "ARS",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "alquiler",
+    "locality": "City Bell",
+    "neighbourhood": "Centro",
+    "address": "Calle 9 Nº 2390",
+    "latitude": -34.86716105962945,
+    "longitude": -58.05405657340756,
+    "totalSurface": 995,
+    "coveredSurface": 188,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Nave_industrial en Quilmes - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 161231400,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "venta",
+    "locality": "Quilmes",
+    "neighbourhood": "Centro",
+    "address": "Calle 58 Nº 4953",
+    "latitude": -34.72501377826867,
+    "longitude": -58.25420460045995,
+    "totalSurface": 565,
+    "coveredSurface": 104,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Terreno en Hudson - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 60912,
+    "currency": "USD",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "alquiler",
+    "locality": "Hudson",
+    "neighbourhood": "Centro",
+    "address": "Calle 59 Nº 2662",
+    "latitude": -34.791801791671745,
+    "longitude": -58.14806894068567,
+    "totalSurface": 664,
+    "coveredSurface": 74,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 9,
+    "images": [
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800",
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Oficina en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 265090,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "oficina",
+    "category": "venta",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 80 Nº 3101",
+    "latitude": -34.762469152906746,
+    "longitude": -58.20742811632717,
+    "totalSurface": 468,
+    "coveredSurface": 214,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 11,
+    "images": [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
       "banos": 2
     }
   },
   {
-    "name": "Comercial en Hudson - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 68023,
+    "name": "Oficina en Bernal - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 268013,
     "currency": "USD",
     "type": "comercial",
-    "subtype": "local",
-    "category": "venta",
-    "locality": "Hudson",
+    "subtype": "oficina",
+    "category": "alquiler",
+    "locality": "Bernal",
     "neighbourhood": "Centro",
-    "address": "Calle 38 Nº 251",
-    "totalSurface": 234,
-    "coveredSurface": 177,
+    "address": "Calle 45 Nº 3916",
+    "latitude": -34.70563008085672,
+    "longitude": -58.28413783698777,
+    "totalSurface": 985,
+    "coveredSurface": 298,
     "isPublished": true,
     "propertySource": "colega",
     "ownerId": null,
     "agentId": null,
-    "colleagueId": 12,
+    "colleagueId": 10,
     "images": [
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Local en La Plata - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 183281,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "local",
+    "category": "venta",
+    "locality": "La Plata",
+    "neighbourhood": "Centro",
+    "address": "Calle 79 Nº 4121",
+    "latitude": -34.914076802892644,
+    "longitude": -57.950015315764745,
+    "totalSurface": 648,
+    "coveredSurface": 227,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 9,
+    "images": [
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 4,
@@ -1296,26 +1102,173 @@
     }
   },
   {
-    "name": "Lote en Bernal - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 226075,
-    "currency": "USD",
+    "name": "Terreno en El Pato - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 63076200,
+    "currency": "ARS",
     "type": "lote",
     "subtype": "terreno",
-    "category": "venta",
-    "locality": "Bernal",
+    "category": "alquiler",
+    "locality": "El Pato",
     "neighbourhood": "Centro",
-    "address": "Calle 24 Nº 700",
-    "totalSurface": 363,
-    "coveredSurface": 122,
+    "address": "Calle 63 Nº 4392",
+    "latitude": -34.87050213576703,
+    "longitude": -58.18664719754717,
+    "totalSurface": 663,
+    "coveredSurface": 174,
     "isPublished": true,
     "propertySource": "colega",
     "ownerId": null,
     "agentId": null,
-    "colleagueId": 1,
+    "colleagueId": 5,
     "images": [
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800",
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Oficina en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 259579,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "oficina",
+    "category": "venta",
+    "locality": "Ranelagh",
+    "neighbourhood": "Centro",
+    "address": "Calle 100 Nº 852",
+    "latitude": -34.78539169092567,
+    "longitude": -58.20222436878545,
+    "totalSurface": 548,
+    "coveredSurface": 220,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800",
+      "https://images.unsplash.com/photo-1556740758-90de2929e50a?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Nave_industrial en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 230123300,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "nave_industrial",
+    "category": "venta",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 4 Nº 3383",
+    "latitude": -34.760653959739805,
+    "longitude": -58.216938096558955,
+    "totalSurface": 382,
+    "coveredSurface": 290,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 4,
+      "banos": 3
+    }
+  },
+  {
+    "name": "Galpon en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 150558,
+    "currency": "USD",
+    "type": "industrial",
+    "subtype": "galpon",
+    "category": "venta",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 90 Nº 366",
+    "latitude": -34.755746078227965,
+    "longitude": -58.21164236655921,
+    "totalSurface": 905,
+    "coveredSurface": 252,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 2,
+    "images": [
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Galpon en City Bell - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 134132,
+    "currency": "USD",
+    "type": "industrial",
+    "subtype": "galpon",
+    "category": "alquiler",
+    "locality": "City Bell",
+    "neighbourhood": "Centro",
+    "address": "Calle 72 Nº 3391",
+    "latitude": -34.86451776253082,
+    "longitude": -58.05729892262545,
+    "totalSurface": 742,
+    "coveredSurface": 54,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 4,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Oficina en Ranelagh - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 309512,
+    "currency": "USD",
+    "type": "comercial",
+    "subtype": "oficina",
+    "category": "venta",
+    "locality": "Ranelagh",
+    "neighbourhood": "Centro",
+    "address": "Calle 32 Nº 2187",
+    "latitude": -34.78747691163583,
+    "longitude": -58.206012685235464,
+    "totalSurface": 505,
+    "coveredSurface": 82,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 6,
+    "images": [
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800",
+      "https://images.unsplash.com/photo-1572916172670-6da0684249be?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 2,
@@ -1323,30 +1276,177 @@
     }
   },
   {
-    "name": "Lote en El Pato - Oportunidad",
-    "description": "Propiedad generada para pruebas de carga y visualización en el portfolio.",
-    "price": 424894000,
+    "name": "Departamento en Bernal - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 284761400,
     "currency": "ARS",
-    "type": "lote",
-    "subtype": "terreno",
+    "type": "vivienda",
+    "subtype": "departamento",
     "category": "venta",
-    "locality": "El Pato",
+    "locality": "Bernal",
     "neighbourhood": "Centro",
-    "address": "Calle 10 Nº 1939",
-    "totalSurface": 383,
-    "coveredSurface": 256,
+    "address": "Calle 51 Nº 3362",
+    "latitude": -34.705142692113085,
+    "longitude": -58.276646442342305,
+    "totalSurface": 296,
+    "coveredSurface": 282,
     "isPublished": true,
     "propertySource": "colega",
     "ownerId": null,
     "agentId": null,
-    "colleagueId": 11,
+    "colleagueId": 12,
     "images": [
-      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800",
+      "https://images.unsplash.com/photo-1600596542815-e36cb29fb927?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 1
+    }
+  },
+  {
+    "name": "Terreno en El Pato - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 22779900,
+    "currency": "ARS",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "alquiler",
+    "locality": "El Pato",
+    "neighbourhood": "Centro",
+    "address": "Calle 26 Nº 4187",
+    "latitude": -34.87427336994883,
+    "longitude": -58.18807055082638,
+    "totalSurface": 674,
+    "coveredSurface": 283,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Galpon en Berazategui - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 439202500,
+    "currency": "ARS",
+    "type": "industrial",
+    "subtype": "galpon",
+    "category": "venta",
+    "locality": "Berazategui",
+    "neighbourhood": "Centro",
+    "address": "Calle 30 Nº 1389",
+    "latitude": -34.76685887103731,
+    "longitude": -58.215228933316396,
+    "totalSurface": 940,
+    "coveredSurface": 276,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 12,
+    "images": [
+      "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800",
+      "https://images.unsplash.com/photo-1565514020176-db79695d7f2d?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 5,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Terreno en Quilmes - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 42157500,
+    "currency": "ARS",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "venta",
+    "locality": "Quilmes",
+    "neighbourhood": "Centro",
+    "address": "Calle 81 Nº 1138",
+    "latitude": -34.72006730805735,
+    "longitude": -58.25404093993869,
+    "totalSurface": 815,
+    "coveredSurface": 100,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800",
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800"
     ],
     "specificCharacteristics": {
       "ambientes": 3,
-      "banos": 1
+      "banos": 3
+    }
+  },
+  {
+    "name": "Terreno en City Bell - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 43027600,
+    "currency": "ARS",
+    "type": "lote",
+    "subtype": "terreno",
+    "category": "alquiler",
+    "locality": "City Bell",
+    "neighbourhood": "Centro",
+    "address": "Calle 82 Nº 1480",
+    "latitude": -34.867601410394116,
+    "longitude": -58.053186692174265,
+    "totalSurface": 965,
+    "coveredSurface": 77,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 10,
+    "images": [
+      "https://images.unsplash.com/photo-1516216628859-9bccecab13ca?q=80&w=800",
+      "https://images.unsplash.com/photo-1629081512803-12f34279b942?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 2
+    }
+  },
+  {
+    "name": "Casa en El Pato - Oportunidad",
+    "description": "Propiedad estratégicamente ubicada en el corredor sur. Ideal para inversión o vivienda permanente. Documentación al día.",
+    "price": 494345500,
+    "currency": "ARS",
+    "type": "vivienda",
+    "subtype": "casa",
+    "category": "venta",
+    "locality": "El Pato",
+    "neighbourhood": "Centro",
+    "address": "Calle 55 Nº 1349",
+    "latitude": -34.86589040227174,
+    "longitude": -58.17418941849851,
+    "totalSurface": 897,
+    "coveredSurface": 54,
+    "isPublished": true,
+    "propertySource": "colega",
+    "ownerId": null,
+    "agentId": null,
+    "colleagueId": 8,
+    "images": [
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=800"
+    ],
+    "specificCharacteristics": {
+      "ambientes": 3,
+      "banos": 2
     }
   }
 ]
