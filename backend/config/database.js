@@ -18,7 +18,8 @@ if (process.env.DB_URL) {
                 require: true,
                 rejectUnauthorized: false 
             }
-        }
+        },
+        logging: false
     });
 } else {
     // Si no (Desarrollo local), usamos las variables sueltas
@@ -28,7 +29,8 @@ if (process.env.DB_URL) {
         process.env.DB_PASSWORD,
         {
             host: process.env.DB_HOST,
-            dialect: 'postgres'
+            dialect: 'postgres',
+            logging: console.log
         }
     );
 }
@@ -387,7 +389,7 @@ const connectDB = async () => {
     // --- IMPORTANTE PARA LOCALHOST ---
     // Descomenta esta línea en tu PC LOCAL la primera vez para crear las tablas nuevas.
     // En el SERVIDOR DE PRODUCCIÓN, déjala comentada.
-    // await sequelize.sync({ alter: true }); 
+    await sequelize.sync({ alter: true }); 
     
     console.log("Tablas sincronizadas.");
   } catch (error) {
