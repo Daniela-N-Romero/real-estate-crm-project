@@ -53,6 +53,17 @@ const imagePools = {
     ]
 };
 
+//Mapa de PDFs según tipo
+const pdfMap = {
+    vivienda: "/assets/pdfs/PLANTILLA-PDF-VIVIENDA.pdf",
+    lote: "/assets/pdfs/PLANTILLA-PDF-TERRENO.pdf",
+    industrial: "/assets/pdfs/PLANTILLA-PDF-INDUSTRIAL.pdf",
+    comercial: "/assets/pdfs/PLANTILLA-PDF-COMERCIAL.pdf"
+};
+
+//Video Único (Formato Embed para que funcione directo)
+const VIDEO_URL = "https://www.youtube.com/embed/egCd_1At4Tg";
+
 // --- HELPERS ---
 const random = (arr) => arr[Math.floor(Math.random() * arr.length)];
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -133,6 +144,9 @@ function generateProperties() {
         const coords = getNearbyCoords(locationData.lat, locationData.lng); // Genera lat/lng reales
         const currency = random(currencies);
         const imgPool = imagePools[type]; // Fotos específicas del tipo
+        // Probabilidad de tener PDF y Video (70% sí, 30% no)
+        const hasPdf = Math.random() > 0.3;
+        const hasVideo = Math.random() > 0.3;
 
         // 2. Precio inteligente
         let price = randomInt(50000, 500000);
@@ -158,7 +172,7 @@ function generateProperties() {
 
             totalSurface: randomInt(200, 1000),
             coveredSurface: randomInt(50, 300),
-            isPublished: true,
+            isPublished: isPropia ? true : false, //no se publican propiedades de colegas
             
             propertySource: isPropia ? 'propia' : 'colega', // 'propia' ajustado
             
@@ -168,6 +182,9 @@ function generateProperties() {
             
             // Elegimos 2 fotos aleatorias del pool CORRECTO
             images: [random(imgPool), random(imgPool)],
+            // Asignamos PDF y Video según tipo de propiedad
+            pdfUrl: hasPdf ? pdfMap[type] : null,
+            videoUrl: hasVideo ? VIDEO_URL : null,
             
             specificCharacteristics: { ambientes: randomInt(2, 5), banos: randomInt(1, 3) }
         };
