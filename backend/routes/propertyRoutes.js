@@ -35,5 +35,6 @@ router.put('/:id', authenticate, uploadMiddleware, propertyController.update);
 router.delete('/:id', authenticate, propertyController.delete);
 // Acción Específica Privada
 router.put('/:id/toggle-published', authenticate, propertyController.togglePublished);
+router.post('/reset-demo-data', authenticate, propertyController.resetDemoData);
 
 module.exports = router;

@@ -30,7 +30,7 @@ if (process.env.DB_URL) {
         {
             host: process.env.DB_HOST,
             dialect: 'postgres',
-            logging: console.log
+            logging: false
         }
     );
 }
@@ -114,9 +114,9 @@ const Property = sequelize.define(
       allowNull: false,
     },
     propertySource: { 
-      // 'ms_propia' (Nuestra) o 'colega' (Externa)
+      // 'propia' (Nuestra) o 'colega' (Externa)
       type: DataTypes.STRING,
-      defaultValue: 'ms_propia', 
+      defaultValue: 'propia', 
       allowNull: false
     },
     // FK para relacionar con el colega (será null si la propiedad es nuestra)

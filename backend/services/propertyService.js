@@ -309,9 +309,13 @@ class PropertyService {
 
         return uniqueSuggestions;
     }
+    
+    async resetDemoData() {
+        await require('../../scripts/seedDatabase').seed(false); // false para no cerrar la conexión
+    }
 
     // ==========================================
-    // MÉTODOS PRIVADOS (LOS OBREROS)
+    // MÉTODOS PRIVADOS
     // ==========================================
 
     //PROCESAMIENTO DE IMÁGENES

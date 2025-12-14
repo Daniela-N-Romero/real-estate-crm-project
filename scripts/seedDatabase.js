@@ -11,7 +11,7 @@ const loadJSON = (fileName) => {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 };
 
-const seed = async () => {
+const seed = async (closeConnection = true) => {
     console.log("> INICIANDO POBLADO DE BASE DE DATOS (SEEDING)...");
     
     try {
@@ -55,8 +55,17 @@ const seed = async () => {
     } catch (error) {
         console.error("> Error fatal en el Seeding:", error);
     } finally {
-        await sequelize.close(); // Cerramos conexión para que el script termine
+       if (closeConnection) {
+            await sequelize.close();
+            console.log("Conexión cerrada.");
+        } else {
+            console.log("Conexión mantenida activa (Modo API).");
+        }
     }
 };
 
-seed();
+if (require.main === module) {
+    seed(true); // Si se ejecuta por terminal (node scripts/seed...), corre directo y cierra la conexión
+};
+
+module.exports = { seed }; 

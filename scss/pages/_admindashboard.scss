@@ -549,6 +549,12 @@ table {
     gap: 15px; /* Espacio entre la flecha y el título */
 }
 
+.header-right {
+    display: flex;
+    justify-content: end;
+    gap: 10px; /* Espacio entre los botones */
+}
+
 /* Estilo del botón de volver */
 .back-btn {
     text-decoration: none;
@@ -587,7 +593,7 @@ table {
 
     /* 2. Ajustamos el grupo del título y la flecha */
     .header-left {
-        justify-content: space-between; /* Separa la flecha del título un poco */
+        justify-content: start; /* Separa la flecha del título un poco */
         width: 100%;
     }
 
@@ -600,7 +606,7 @@ table {
     /* 4. Hacemos el botón de Logout fácil de tocar */
     .logout-btn {
         align-self:flex-end; /* Centrado horizontal */
-        width: 40%; /* Ancho total */
+        width: 150px; /* Ancho total */
         text-align: center;
         padding: 10px;
     }

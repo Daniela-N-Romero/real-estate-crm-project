@@ -159,6 +159,16 @@ class PropertyController {
         }
     }
 
+    async resetDemoData(req, res) {
+        try {
+            await propertyService.resetDemoData();
+            res.json({ message: 'Datos de demostración reiniciados correctamente' });
+        } catch (error) {
+            console.error('Error en resetDemoData:', error);
+            res.status(500).json({ message: 'Error al reiniciar datos de demostración' });
+        }
+    }
+
 }
 
 module.exports = new PropertyController();

@@ -343,8 +343,8 @@ async function loadPropertyForEdit(propertyId) {
                 document.getElementById('colleagueId').dispatchEvent(new Event('change'));
             }
         } else {
-            // Asumimos 'ms_propia' por defecto
-            const rb = document.getElementById('sourceMS');
+            // Asumimos 'propia' por defecto
+            const rb = document.getElementById('sourceOwn');
             if(rb) {
                 rb.checked = true;
                 toggleSource();
@@ -811,11 +811,11 @@ async function loadPropertyForEdit(propertyId) {
     // --- LÓGICA DE GESTIÓN INTERNA (Propia vs Colega) ---
 
     // 1. Alternar vistas (Switch)
-    const radioMS = document.getElementById('sourceMS');
+    const radioOwn = document.getElementById('sourceOwn');
     const radioColleague = document.getElementById('sourceColleague');
     const ownerSection = document.getElementById('ownerSection');
     const colleagueSection = document.getElementById('colleagueSection');
-    const msLabel = document.getElementById('msLabel');
+    const ownLabel = document.getElementById('ownLabel');
     const colLabel = document.getElementById('colLabel');
 
 function toggleSource() {
@@ -824,20 +824,20 @@ function toggleSource() {
         ownerSection.style.display = 'none';
         colleagueSection.style.display = 'block';
         setBtnActive(colLabel);   // Colega se pone azul
-        setBtnInactive(msLabel);  // MS se pone gris
+        setBtnInactive(ownLabel);  // Propia se pone gris
         document.getElementById('ownerId').value = ""; 
     } 
-    else if (radioMS.checked) {
+    else if (radioOwn.checked) {
         ownerSection.style.display = 'block';
         colleagueSection.style.display = 'none';
-        setBtnActive(msLabel);    // MS se pone azul
+        setBtnActive(ownLabel);    // Propia se pone azul
         setBtnInactive(colLabel); // Colega se pone gris
         document.getElementById('colleagueId').value = "";
     }
     else {
         ownerSection.style.display = 'none';
         colleagueSection.style.display = 'none';
-        setBtnInactive(msLabel);
+        setBtnInactive(ownLabel);
         setBtnInactive(colLabel);
     }
 }
@@ -858,8 +858,8 @@ function toggleSource() {
     }
 
     // Escuchamos los cambios en los radio buttons
-    if(radioMS && radioColleague) {
-        radioMS.addEventListener('change', toggleSource);
+    if(radioOwn && radioColleague) {
+        radioOwn.addEventListener('change', toggleSource);
         radioColleague.addEventListener('change', toggleSource);
     }
 

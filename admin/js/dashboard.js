@@ -7,23 +7,23 @@ let currentSourceFilter = 'propia'; // Por defecto: Cartera Propia
 // --- NUEVA FUNCIÓN: Filtrar por Origen (Propia vs Colega) ---
 function filterPropertiesBySource(source) {
     currentSourceFilter = source;
-    
+
     // Actualizar botones visualmente (Azul/Gris)
-    const btnMS = document.getElementById('tab-ms');
+    const btnOwn = document.getElementById('tab-own');
     const btnCol = document.getElementById('tab-colleagues');
-    
+
     if (source === 'propia') {
-        btnMS.classList.add('active', 'text-primary');
-        btnMS.classList.remove('text-secondary');
-        
+        btnOwn.classList.add('active', 'text-primary');
+        btnOwn.classList.remove('text-secondary');
+
         btnCol.classList.remove('active', 'text-primary');
         btnCol.classList.add('text-secondary');
     } else {
         btnCol.classList.add('active', 'text-primary');
         btnCol.classList.remove('text-secondary');
-        
-        btnMS.classList.remove('active', 'text-primary');
-        btnMS.classList.add('text-secondary');
+
+        btnOwn.classList.remove('active', 'text-primary');
+        btnOwn.classList.add('text-secondary');
     }
 
     // Volver a aplicar orden y búsqueda con el nuevo filtro de origen
@@ -63,25 +63,73 @@ function customConfirm(message, title = '¿Estás seguro?') {
 // --- FIN DE FUNCIONES DE MODALES ---
 
 // --- LÓGICA DE LOGOUT ---
-document.getElementById('logoutBtn').addEventListener('click', async function() {
-    try {
-        const response = await fetch('/api/auth/logout', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' }
-        });
-        const data = await response.json();
-        if (response.ok) {
-            await customAlert('Sesión cerrada exitosamente.', 'Cierre de Sesión');
-            sessionStorage.removeItem('token');
-            window.location.href = data.redirectTo;
-        } else {
-            await customAlert('Hubo un problema al cerrar la sesión: ' + (data.message || 'Error desconocido.'), 'Error de Sesión');
+function setLogout() {
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+        try {
+            const response = await fetch('/api/auth/logout', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' }
+            });
+            const data = await response.json();
+            if (response.ok) {
+                await customAlert('Sesión cerrada exitosamente.', 'Cierre de Sesión');
+                sessionStorage.removeItem('token');
+                window.location.href = data.redirectTo;
+            } else {
+                await customAlert('Hubo un problema al cerrar la sesión.');
+            }
+        } catch (error) {
+            await customAlert('No se pudo conectar con el servidor para cerrar sesión. Error de red.', 'Error de Conexión');
         }
-    } catch (error) {
-        console.error('Error al conectar con el servidor para cerrar sesión:', error);
-        await customAlert('No se pudo conectar con el servidor para cerrar sesión. Error de red.', 'Error de Conexión');
-    }
-});
+        })
+};
+
+// --- LÓGICA DE RESTAURAR DEMO ---
+function setResetBtn() { 
+    const resetBtn = document.getElementById('resetDemoBtn');
+
+    resetBtn.addEventListener('click', async () => {
+        
+        const confirmed = await customConfirm('¿Deseas restaurar los datos? Esto revertira cualquier cambio realizado.', 'Restaurar Datos de Demostración');
+        if (!confirmed) return;
+
+        try {
+            resetBtn.disabled = true;
+            resetBtn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Restaurando...';
+
+            // Token para seguridad (si estás usando JWT)
+            const token = sessionStorage.getItem('token');
+
+            // Petición al Backend
+            const res = await fetch('/api/properties/reset-demo-data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            const data = await res.json();
+
+            if (res.ok) {
+                await customAlert('✅ ¡Restauraste los datos de demostración!', title = 'Restauración Exitosa');
+                window.location.reload(); // Recargamos para ver los cambios
+            } else {
+                throw new Error(data.message || 'Error desconocido');
+            }
+
+        } catch (error) {
+            await customAlert('❌ Hubo un error al intentar restaurar la base de datos.');
+        } finally {
+            // UX: Restaurar botón
+            resetBtn.disabled = false;
+            resetBtn.innerHTML = '<i class="bi bi-arrow-counterclockwise"></i> Restaurar Demo'; // O el texto original
+        }
+    })
+
+    
+}
+
 // --- FIN LÓGICA DE LOGOUT ---
 
 
@@ -96,7 +144,7 @@ function renderTable(propertiesToRender) {
 
     const buildRow = (property) => {
         const row = tableBody.insertRow();
-         // Celda 0: Imagen (Portada)
+        // Celda 0: Imagen (Portada)
         const imageCell = row.insertCell(0);
         imageCell.classList.add('dashboard-thumbnail-cell');
         const coverImageUrl = (property.images && property.images.length > 0) ? property.images[0] : '/assets/images/placeholder.jpg';
@@ -107,8 +155,8 @@ function renderTable(propertiesToRender) {
         // Generamos el slug (parte de la URL amigable)
         const safeName = property.name || 'Propiedad sin nombre';
         //Insertamos el HTML del enlace
-        
-       if (property.isPublished) {
+
+        if (property.isPublished) {
             // CASO A: PUBLICADA -> Generamos Enlace
             const slug = safeName.toLowerCase().trim().replace(/ /g, '-').replace(/[^\w-]+/g, '');
             const publicUrl = `/propiedad/${property.id}/${slug}`;
@@ -139,7 +187,7 @@ function renderTable(propertiesToRender) {
         // Celda 4: Moneda (la uniremos con el precio)
         row.insertCell(4).textContent = property.currency || 'N/A';
         row.cells[4].setAttribute('data-label', 'Moneda:');
-        
+
         // Celda 5: Precio
         const formattedPrice = property.price ? `${property.price.toLocaleString('es-AR')}` : 'Consultar';
         row.insertCell(5).textContent = formattedPrice;
@@ -166,7 +214,7 @@ function renderTable(propertiesToRender) {
         pdfCell.className = property.pdfUrl ? 'text-success' : 'text-danger';
         pdfCell.style.textAlign = 'center';
         pdfCell.setAttribute('data-label', 'PDF:');
-        
+
         // Celda 10: Publicado
         const publishedCell = row.insertCell(10);
         publishedCell.setAttribute('data-label', 'Estado:');
@@ -219,10 +267,10 @@ function renderTable(propertiesToRender) {
 
         // Loop through the now-sorted names to build the table
         groupNames.forEach(groupName => {
-                const headerRow = tableBody.insertRow();
-                headerRow.className = 'group-header-row'; // <-- Añadimos una clase a la fila
-                headerRow.innerHTML = `<th colspan="12">${groupName}</th>`; // Ya no necesitamos la clase en el <th>
-                grouped[groupName].forEach(buildRow);
+            const headerRow = tableBody.insertRow();
+            headerRow.className = 'group-header-row'; // <-- Añadimos una clase a la fila
+            headerRow.innerHTML = `<th colspan="12">${groupName}</th>`; // Ya no necesitamos la clase en el <th>
+            grouped[groupName].forEach(buildRow);
         });
     }
 }
@@ -232,14 +280,14 @@ function renderTable(propertiesToRender) {
  */
 function applySortAndGroup() {
 
-const searchBar = document.getElementById('search-bar');
+    const searchBar = document.getElementById('search-bar');
     const searchText = searchBar ? searchBar.value.toLowerCase() : '';
-    
+
     // FILTRADO MAESTRO
     let propertiesToDisplay = allProperties.filter(property => {
         // 1. Filtro de Origen (Propia vs Colega) -> LÓGICA ROBUSTA
         let propSource = property.propertySource || 'propia'; // Si es null, asumimos propia
-        
+
         // Corrección para propiedades viejas que tengan null pero tengan colegaId
         if (!property.propertySource && property.colleagueId) propSource = 'colega';
 
@@ -248,7 +296,7 @@ const searchBar = document.getElementById('search-bar');
         }
 
         // 2. Filtro de Búsqueda (Nombre)
-        const propertyName = property.name || ''; 
+        const propertyName = property.name || '';
         return propertyName.toLowerCase().includes(searchText);
     });
 
@@ -289,7 +337,7 @@ async function fetchProperties() {
             return;
         }
         if (!response.ok) throw new Error('Error al obtener las propiedades.');
-        
+
         allProperties = await response.json();
         applySortAndGroup();
 
@@ -300,7 +348,6 @@ async function fetchProperties() {
         }
 
     } catch (error) {
-        console.error('Error al cargar propiedades:', error);
         tableBody.innerHTML = `<tr><td colspan="12">Error al cargar las propiedades.</td></tr>`;
     }
 }
@@ -323,7 +370,7 @@ async function togglePublishStatus(propertyId, currentStatus) {
             fetchProperties();
         } else {
             const errorData = await response.json();
-            await customAlert('Error al cambiar el estado de publicación: ' + (errorData.message || 'Desconocido'));
+            await customAlert('Error al cambiar el estado de publicación.');
         }
     } catch (error) {
         console.error('Error de red al cambiar estado de publicación:', error);
@@ -353,30 +400,31 @@ async function confirmDelete(propertyId) {
         });
 
         if (response.ok) {
-            await customAlert('Propiedad eliminada con éxito.');
+            await customAlert('Propiedad eliminada con éxito.', title = 'Eliminación Exitosa');
             // 3. Recarga la lista de propiedades para reflejar el cambio
-            fetchProperties(); 
+            fetchProperties();
         } else {
             const errorData = await response.json();
-            await customAlert('Error al eliminar la propiedad: ' + (errorData.message || 'Error desconocido.'));
+            await customAlert('Error al eliminar la propiedad.');
         }
     } catch (error) {
-        console.error('Error de red al eliminar la propiedad:', error);
         await customAlert('Error de conexión al eliminar la propiedad.');
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     // Connect the new dropdowns to the function
+    setLogout();
+    setResetBtn();
     document.getElementById('group-by').addEventListener('change', applySortAndGroup);
     document.getElementById('sort-by').addEventListener('change', applySortAndGroup);
     const searchBar = document.getElementById('search-bar');
     if (searchBar) {
         searchBar.addEventListener('input', applySortAndGroup);
-        searchBar.disabled = true; 
+        searchBar.disabled = true;
         searchBar.placeholder = "Cargando propiedades...";
     }
-    
+
     // Initial data fetch
     fetchProperties();
 
